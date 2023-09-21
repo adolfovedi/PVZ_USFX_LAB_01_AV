@@ -1,0 +1,7 @@
+C:\Users\HP\Documents\Unreal Projects\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Development\PVZ_USFX_LAB_01_AV\Definitions.PVZ_USFX_LAB_01_AV.h
+C:\Users\HP\Documents\Unreal Projects\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\PVZ_USFX_LAB_01_AVProjectile.h
+C:\Users\HP\Documents\Unreal Projects\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\PVZ_USFX_LAB_01_AVProjectile.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ProjectileMovementComponent.generated.h
