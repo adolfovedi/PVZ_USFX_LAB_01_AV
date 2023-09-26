@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeAbonoMagico() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAbonoMagico_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
+		{ "Comment", "/**\n *\n */" },
 		{ "IncludePath", "AbonoMagico.h" },
 		{ "ModuleRelativePath", "AbonoMagico.h" },
 	};
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeAbonoMagico() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AAbonoMagico, 367846793);
+	IMPLEMENT_CLASS(AAbonoMagico, 1148617498);
 	template<> PVZ_USFX_LAB_01_AV_API UClass* StaticClass<AAbonoMagico>()
 	{
 		return AAbonoMagico::StaticClass();

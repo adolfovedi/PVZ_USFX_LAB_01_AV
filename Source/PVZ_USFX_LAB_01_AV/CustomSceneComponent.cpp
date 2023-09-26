@@ -20,7 +20,7 @@ void UCustomSceneComponent::BeginPlay()
 	Super::BeginPlay();
 
 	// ...
-	
+
 }
 
 
@@ -31,4 +31,5 @@ void UCustomSceneComponent::TickComponent(float DeltaTime, ELevelTick TickType, 
 
 	// ...
 }
+
 

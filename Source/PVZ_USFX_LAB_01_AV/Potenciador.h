@@ -6,7 +6,9 @@
 #include "GameFramework/Actor.h"
 #include "Potenciador.generated.h"
 
-UCLASS()
+class UStaticMeshComponent;
+
+UCLASS(Abstract)
 class PVZ_USFX_LAB_01_AV_API APotenciador : public AActor
 {
 	GENERATED_BODY()
@@ -14,6 +16,11 @@ class PVZ_USFX_LAB_01_AV_API APotenciador : public AActor
 public:	
 	// Sets default values for this actor's properties
 	APotenciador();
+
+	uint32 TipoPotenciador;
+
+	UStaticMeshComponent* PotenciadorMeshComponent;
+	void ActivarPotenciador() PURE_VIRTUAL(APotenciador::ActivarPotenciador, );
 
 protected:
 	// Called when the game starts or when spawned

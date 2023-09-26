@@ -9,7 +9,7 @@
 class UProjectileMovementComponent;
 class UStaticMeshComponent;
 
-UCLASS(config=Game)
+UCLASS(config = Game)
 class APVZ_USFX_LAB_01_AVProjectile : public AActor
 {
 	GENERATED_BODY()
@@ -33,5 +33,12 @@ public:
 	FORCEINLINE UStaticMeshComponent* GetProjectileMesh() const { return ProjectileMesh; }
 	/** Returns ProjectileMovement subobject **/
 	FORCEINLINE UProjectileMovementComponent* GetProjectileMovement() const { return ProjectileMovement; }
+
+public:
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	float DamageGenerates = 10.0f;
+	float MaxDistance = 400.0f;
 };
 

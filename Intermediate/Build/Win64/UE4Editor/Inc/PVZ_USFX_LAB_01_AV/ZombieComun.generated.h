@@ -36,7 +36,7 @@ public: \
 
 #define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_ZombieComun_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AZombieComun(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API AZombieComun(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AZombieComun) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AZombieComun); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AZombieComun); \
@@ -48,8 +48,6 @@ public:
 
 
 #define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_ZombieComun_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AZombieComun() { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AZombieComun(AZombieComun&&); \

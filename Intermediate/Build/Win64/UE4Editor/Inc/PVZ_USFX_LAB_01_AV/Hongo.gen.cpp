@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeHongo() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHongo_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
+		{ "Comment", "/**\n *\n */" },
 		{ "IncludePath", "Hongo.h" },
 		{ "ModuleRelativePath", "Hongo.h" },
 	};
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeHongo() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AHongo, 2352271045);
+	IMPLEMENT_CLASS(AHongo, 1473407846);
 	template<> PVZ_USFX_LAB_01_AV_API UClass* StaticClass<AHongo>()
 	{
 		return AHongo::StaticClass();

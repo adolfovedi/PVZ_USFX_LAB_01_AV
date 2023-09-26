@@ -7,11 +7,12 @@
 #include "Lanzaguisantes.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class PVZ_USFX_LAB_01_AV_API ALanzaguisantes : public APlant
 {
 	GENERATED_BODY()
-	
+public:
+	ALanzaguisantes();
 };

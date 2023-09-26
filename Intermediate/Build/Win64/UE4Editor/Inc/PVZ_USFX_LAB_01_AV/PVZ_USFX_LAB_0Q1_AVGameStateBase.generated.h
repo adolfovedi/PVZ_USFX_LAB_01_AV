@@ -14,8 +14,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define PVZ_USFX_LAB_01_AV_PVZ_USFX_LAB_0Q1_AVGameStateBase_generated_h
 
 #define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_PVZ_USFX_LAB_0Q1_AVGameStateBase_h_15_SPARSE_DATA
-#define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_PVZ_USFX_LAB_0Q1_AVGameStateBase_h_15_RPC_WRAPPERS
-#define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_PVZ_USFX_LAB_0Q1_AVGameStateBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_PVZ_USFX_LAB_0Q1_AVGameStateBase_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetScore); \
+	DECLARE_FUNCTION(execSetScore);
+
+
+#define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_PVZ_USFX_LAB_0Q1_AVGameStateBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetScore); \
+	DECLARE_FUNCTION(execSetScore);
+
+
 #define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_PVZ_USFX_LAB_0Q1_AVGameStateBase_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPVZ_USFX_LAB_0Q1_AVGameStateBase(); \
@@ -36,7 +46,7 @@ public: \
 
 #define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_PVZ_USFX_LAB_0Q1_AVGameStateBase_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API APVZ_USFX_LAB_0Q1_AVGameStateBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API APVZ_USFX_LAB_0Q1_AVGameStateBase(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(APVZ_USFX_LAB_0Q1_AVGameStateBase) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, APVZ_USFX_LAB_0Q1_AVGameStateBase); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APVZ_USFX_LAB_0Q1_AVGameStateBase); \
@@ -48,8 +58,6 @@ public:
 
 
 #define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_PVZ_USFX_LAB_0Q1_AVGameStateBase_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API APVZ_USFX_LAB_0Q1_AVGameStateBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API APVZ_USFX_LAB_0Q1_AVGameStateBase(APVZ_USFX_LAB_0Q1_AVGameStateBase&&); \
@@ -57,10 +65,13 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, APVZ_USFX_LAB_0Q1_AVGameStateBase); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APVZ_USFX_LAB_0Q1_AVGameStateBase); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(APVZ_USFX_LAB_0Q1_AVGameStateBase)
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APVZ_USFX_LAB_0Q1_AVGameStateBase)
 
 
-#define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_PVZ_USFX_LAB_0Q1_AVGameStateBase_h_15_PRIVATE_PROPERTY_OFFSET
+#define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_PVZ_USFX_LAB_0Q1_AVGameStateBase_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__CurrentScore() { return STRUCT_OFFSET(APVZ_USFX_LAB_0Q1_AVGameStateBase, CurrentScore); }
+
+
 #define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_PVZ_USFX_LAB_0Q1_AVGameStateBase_h_12_PROLOG
 #define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_PVZ_USFX_LAB_0Q1_AVGameStateBase_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeZombieCubo() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AZombieCubo_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
+		{ "Comment", "/**\n *\n */" },
 		{ "IncludePath", "ZombieCubo.h" },
 		{ "ModuleRelativePath", "ZombieCubo.h" },
 	};
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeZombieCubo() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AZombieCubo, 1734170953);
+	IMPLEMENT_CLASS(AZombieCubo, 1737190545);
 	template<> PVZ_USFX_LAB_01_AV_API UClass* StaticClass<AZombieCubo>()
 	{
 		return AZombieCubo::StaticClass();

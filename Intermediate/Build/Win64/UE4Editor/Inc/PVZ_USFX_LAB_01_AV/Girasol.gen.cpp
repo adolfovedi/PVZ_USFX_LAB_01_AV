@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeGirasol() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGirasol_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
+		{ "Comment", "/**\n *\n */" },
 		{ "IncludePath", "Girasol.h" },
 		{ "ModuleRelativePath", "Girasol.h" },
 	};
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeGirasol() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGirasol, 3167629245);
+	IMPLEMENT_CLASS(AGirasol, 1402932460);
 	template<> PVZ_USFX_LAB_01_AV_API UClass* StaticClass<AGirasol>()
 	{
 		return AGirasol::StaticClass();

@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeLanzaguisantes() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ALanzaguisantes_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
+		{ "Comment", "/**\n *\n */" },
 		{ "IncludePath", "Lanzaguisantes.h" },
 		{ "ModuleRelativePath", "Lanzaguisantes.h" },
 	};
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeLanzaguisantes() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ALanzaguisantes, 1491943434);
+	IMPLEMENT_CLASS(ALanzaguisantes, 361675327);
 	template<> PVZ_USFX_LAB_01_AV_API UClass* StaticClass<ALanzaguisantes>()
 	{
 		return ALanzaguisantes::StaticClass();

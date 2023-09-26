@@ -7,11 +7,14 @@
 #include "MegaSol.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class PVZ_USFX_LAB_01_AV_API AMegaSol : public APotenciador
 {
 	GENERATED_BODY()
-	
+public:
+
+	  void ActivarPotenciador();
+
 };

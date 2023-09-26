@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeMegaSol() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMegaSol_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
+		{ "Comment", "/**\n *\n */" },
 		{ "IncludePath", "MegaSol.h" },
 		{ "ModuleRelativePath", "MegaSol.h" },
 	};
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeMegaSol() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMegaSol, 2868912838);
+	IMPLEMENT_CLASS(AMegaSol, 883527707);
 	template<> PVZ_USFX_LAB_01_AV_API UClass* StaticClass<AMegaSol>()
 	{
 		return AMegaSol::StaticClass();

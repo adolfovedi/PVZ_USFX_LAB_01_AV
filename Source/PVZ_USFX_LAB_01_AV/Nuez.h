@@ -7,11 +7,12 @@
 #include "Nuez.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class PVZ_USFX_LAB_01_AV_API ANuez : public APlant
 {
 	GENERATED_BODY()
-	
+public:
+	ANuez();
 };

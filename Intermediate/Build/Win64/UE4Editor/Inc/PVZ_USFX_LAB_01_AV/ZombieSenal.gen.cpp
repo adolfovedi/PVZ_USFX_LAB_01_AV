@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeZombieSenal() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AZombieSenal, 2442962909);
+	IMPLEMENT_CLASS(AZombieSenal, 4145427263);
 	template<> PVZ_USFX_LAB_01_AV_API UClass* StaticClass<AZombieSenal>()
 	{
 		return AZombieSenal::StaticClass();

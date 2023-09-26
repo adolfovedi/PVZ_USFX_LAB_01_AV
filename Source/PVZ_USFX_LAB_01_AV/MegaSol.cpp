@@ -3,3 +3,7 @@
 
 #include "MegaSol.h"
 
+void AMegaSol::ActivarPotenciador()
+{
+	UE_LOG(LogTemp, Warning, TEXT("MegaSol Activado"));
+}

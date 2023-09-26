@@ -59,7 +59,7 @@ void EmptyLinkFunctionForGeneratedCodePotenciador() {}
 		0,
 		0,
 		0,
-		0x009000A4u,
+		0x009000A5u,
 		METADATA_PARAMS(Z_Construct_UClass_APotenciador_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_APotenciador_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_APotenciador()
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodePotenciador() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APotenciador, 1544241878);
+	IMPLEMENT_CLASS(APotenciador, 2044966055);
 	template<> PVZ_USFX_LAB_01_AV_API UClass* StaticClass<APotenciador>()
 	{
 		return APotenciador::StaticClass();

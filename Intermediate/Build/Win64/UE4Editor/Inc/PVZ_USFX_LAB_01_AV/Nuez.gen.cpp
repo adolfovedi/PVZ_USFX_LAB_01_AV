@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeNuez() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANuez_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
+		{ "Comment", "/**\n *\n */" },
 		{ "IncludePath", "Nuez.h" },
 		{ "ModuleRelativePath", "Nuez.h" },
 	};
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeNuez() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANuez, 32348158);
+	IMPLEMENT_CLASS(ANuez, 4245467432);
 	template<> PVZ_USFX_LAB_01_AV_API UClass* StaticClass<ANuez>()
 	{
 		return ANuez::StaticClass();

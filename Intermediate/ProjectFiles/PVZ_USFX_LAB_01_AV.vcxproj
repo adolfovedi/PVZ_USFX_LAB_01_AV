@@ -276,6 +276,8 @@
     <None Include="..\..\PVZ_USFX_LAB_01_AV.uproject"/>
     <None Include="..\..\Source\PVZ_USFX_LAB_01_AV.Target.cs"/>
     <None Include="..\..\Source\PVZ_USFX_LAB_01_AVEditor.Target.cs"/>
+    <None Include="..\..\.gitattributes"/>
+    <None Include="..\..\.gitignore"/>
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini"/>
     <None Include="..\..\Config\DefaultEngine.ini"/>

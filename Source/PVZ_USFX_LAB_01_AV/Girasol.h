@@ -7,11 +7,12 @@
 #include "Girasol.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class PVZ_USFX_LAB_01_AV_API AGirasol : public APlant
 {
 	GENERATED_BODY()
-	
+public:
+	AGirasol();
 };

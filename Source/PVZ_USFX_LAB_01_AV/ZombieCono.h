@@ -7,11 +7,12 @@
 #include "ZombieCono.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class PVZ_USFX_LAB_01_AV_API AZombieCono : public AZombie
 {
 	GENERATED_BODY()
-	
+public:
+	AZombieCono();
 };

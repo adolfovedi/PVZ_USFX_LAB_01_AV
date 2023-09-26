@@ -10,6 +10,8 @@ URandomMovement::URandomMovement()
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
 
+	//bWantsBeginPlay = true;
+	MovementRadius = 5;
 	// ...
 }
 
@@ -20,7 +22,7 @@ void URandomMovement::BeginPlay()
 	Super::BeginPlay();
 
 	// ...
-	
+
 }
 
 
@@ -29,6 +31,15 @@ void URandomMovement::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
+	AActor* Parent = GetOwner();
+	if (Parent)
+	{
+		Parent->SetActorLocation(Parent->GetActorLocation() + FVector(
+			FMath::FRandRange(-1, 1) * MovementRadius,
+			FMath::FRandRange(-1, 1) * MovementRadius,
+			FMath::FRandRange(-1, 1) * MovementRadius));
+	}
 	// ...
 }
+
 

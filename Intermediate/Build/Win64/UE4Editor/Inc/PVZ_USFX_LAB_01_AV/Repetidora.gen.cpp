@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeRepetidora() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARepetidora_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
+		{ "Comment", "/**\n *\n */" },
 		{ "IncludePath", "Repetidora.h" },
 		{ "ModuleRelativePath", "Repetidora.h" },
 	};
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeRepetidora() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ARepetidora, 3301872873);
+	IMPLEMENT_CLASS(ARepetidora, 2002718724);
 	template<> PVZ_USFX_LAB_01_AV_API UClass* StaticClass<ARepetidora>()
 	{
 		return ARepetidora::StaticClass();

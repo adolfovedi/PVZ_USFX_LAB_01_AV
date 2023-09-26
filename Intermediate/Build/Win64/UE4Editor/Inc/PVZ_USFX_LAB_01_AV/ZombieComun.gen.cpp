@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeZombieComun() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AZombieComun_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
+		{ "Comment", "/**\n *\n */" },
 		{ "IncludePath", "ZombieComun.h" },
 		{ "ModuleRelativePath", "ZombieComun.h" },
 	};
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeZombieComun() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AZombieComun, 399772229);
+	IMPLEMENT_CLASS(AZombieComun, 1087402156);
 	template<> PVZ_USFX_LAB_01_AV_API UClass* StaticClass<AZombieComun>()
 	{
 		return AZombieComun::StaticClass();

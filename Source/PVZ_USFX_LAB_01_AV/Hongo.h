@@ -7,11 +7,12 @@
 #include "Hongo.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class PVZ_USFX_LAB_01_AV_API AHongo : public APlant
 {
 	GENERATED_BODY()
-	
+public:
+	AHongo();
 };
