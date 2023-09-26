@@ -16,6 +16,7 @@
 #include "Girasol.h"
 #include "Nuez.h"
 #include "Hongo.h"
+#include "Sol.h"
 
 APVZ_USFX_LAB_01_AVGameMode::APVZ_USFX_LAB_01_AVGameMode()
 {
@@ -59,6 +60,27 @@ void APVZ_USFX_LAB_01_AVGameMode::BeginPlay()
 	FTransform SpawnLocation;
 	SpawnLocation.SetLocation(FVector(-1500.0f, 1200.0f, 200.0f));
 
+	ASol* Sol1 = GetWorld()->SpawnActor<ASol>(ASol::StaticClass(), FVector(-400.0f, -50.0f, 160.0f), FRotator::ZeroRotator);
+	ASol* Sol2 = GetWorld()->SpawnActor<ASol>(ASol::StaticClass(), FVector(-450, -50, 160), FRotator::ZeroRotator);
+
+
+		// Establece el número de soles que deseas crear
+	
+	int NumSol = 10;
+
+	for (int i = 0; i < NumSol; ++i)
+	{
+		// Genera una posición aleatoria para el sol
+		//FVector SpawnLocation = FVector(FMath::RandRange(-1000.0f, 1000.0f), FMath::RandRange(-1000.0f, 1000.0f), 0.0f);
+
+		// Crea una instancia del sol y lo coloca en la posición generada
+		//ASol* NewSol = GetWorld()->SpawnActor<ASol>(SolClass, SpawnLocation, FRotator::ZeroRotator);
+
+		// Puedes personalizar las propiedades del sol aquí si es necesario
+	}
+
+
+	
 	//-------------------------------------->ZombiesComun<------------------------
 
 	float initialPositionX = -1500.0f;

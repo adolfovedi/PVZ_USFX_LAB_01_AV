@@ -15,7 +15,7 @@ class APVZ_USFX_LAB_01_AVGameMode : public AGameModeBase
 
 public:
 	APVZ_USFX_LAB_01_AVGameMode();
-
+	TArray<class Asol*> ArraySol;
 	TArray<class AZombie*> ArrayZombies;
 	TArray<class APlant*> ArrayPlants;
 	TArray<class APlant*> ArrayPlant;

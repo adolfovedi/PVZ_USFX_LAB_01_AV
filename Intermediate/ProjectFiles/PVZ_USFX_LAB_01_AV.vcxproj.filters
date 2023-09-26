@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\PVZ_USFX_LAB_01_AV.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{E621A5BA-3504-463E-88A0-8D8A19CF8582}</UniqueIdentifier>
+      <UniqueIdentifier>{21083A4B-1A8C-4CF7-AE7E-8EE29ED745A2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PVZ_USFX_LAB_01_AV.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{567247C3-C025-404C-AA34-28694C2BC5EA}</UniqueIdentifier>
+      <UniqueIdentifier>{D120988D-B79C-4201-94F5-EF7EEE998482}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\PVZ_USFX_LAB_01_AV">
-      <UniqueIdentifier>{5CD431D0-4AEE-4192-B8B7-2EC8884B14D7}</UniqueIdentifier>
+      <UniqueIdentifier>{1D956132-E1F5-429F-995C-B0A07F80776E}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\AbonoMagico.cpp">
       <Filter>Source\PVZ_USFX_LAB_01_AV</Filter>
@@ -137,6 +137,12 @@
       <Filter>Source\PVZ_USFX_LAB_01_AV</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\PVZ_USFX_LAB_01_AV\Repetidora.h">
+      <Filter>Source\PVZ_USFX_LAB_01_AV</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\Sol.cpp">
+      <Filter>Source\PVZ_USFX_LAB_01_AV</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB_01_AV\Sol.h">
       <Filter>Source\PVZ_USFX_LAB_01_AV</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\Zombie.cpp">
