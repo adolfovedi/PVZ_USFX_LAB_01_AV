@@ -17,6 +17,8 @@
 #include "Nuez.h"
 #include "Hongo.h"
 #include "Sol.h"
+#include "Fenix.h"
+
 
 APVZ_USFX_LAB_01_AVGameMode::APVZ_USFX_LAB_01_AVGameMode()
 {
@@ -64,20 +66,8 @@ void APVZ_USFX_LAB_01_AVGameMode::BeginPlay()
 	ASol* Sol2 = GetWorld()->SpawnActor<ASol>(ASol::StaticClass(), FVector(-450, -50, 160), FRotator::ZeroRotator);
 
 
-		// Establece el número de soles que deseas crear
+	//	// Establece el número de soles que deseas crear
 	
-	int NumSol = 10;
-
-	for (int i = 0; i < NumSol; ++i)
-	{
-		// Genera una posición aleatoria para el sol
-		//FVector SpawnLocation = FVector(FMath::RandRange(-1000.0f, 1000.0f), FMath::RandRange(-1000.0f, 1000.0f), 0.0f);
-
-		// Crea una instancia del sol y lo coloca en la posición generada
-		//ASol* NewSol = GetWorld()->SpawnActor<ASol>(SolClass, SpawnLocation, FRotator::ZeroRotator);
-
-		// Puedes personalizar las propiedades del sol aquí si es necesario
-	}
 
 
 	
@@ -160,6 +150,12 @@ void APVZ_USFX_LAB_01_AVGameMode::BeginPlay()
 		}
 	}
 
+	
+	
+
+
+
+
 
 	//-------------------------------------------->LanzaGuizantes<------------------------------------------------
 
@@ -240,12 +236,14 @@ void APVZ_USFX_LAB_01_AVGameMode::BeginPlay()
 		{
 			NewNuez->SetActorEnableCollision(true);     // Habilita las colisiones si es necesario
 			aPlantas.Add(NewNuez);
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Energia de %s es: %i"), *NewNuez->GetName(), NewNuez->energia));
 		}
 
 
 		for (int j = 0; j < 2; j++) {
 			APlant* NewLanzaguizantes = SpawnPlant(FVector(initialPositionX + i * 150.0f, initialPositionY + j * 350.0f, 200.0f));
 			aPlantas.Add(NewLanzaguizantes);
+			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Energia de %s es: %i"), *NewLanzaguisantes->GetName(), NewLanzaguisantes->energia));
 		}
 	}
 

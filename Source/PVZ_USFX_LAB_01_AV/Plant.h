@@ -35,7 +35,7 @@ public:
 	/* How fast the weapon will fire */
 	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
 	float FireRate;
-
+	int energia;
 	void ShotTimerExpired();
 
 	float TiempoTranscurrido;

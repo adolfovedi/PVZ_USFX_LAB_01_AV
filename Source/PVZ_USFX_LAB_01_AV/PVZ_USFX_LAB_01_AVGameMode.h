@@ -19,19 +19,24 @@ public:
 	TArray<class AZombie*> ArrayZombies;
 	TArray<class APlant*> ArrayPlants;
 	TArray<class APlant*> ArrayPlant;
+
 	//TMap<APotenciador*, int32> MapPotenciadores;
+
 	TMap<FString, uint32> MapPotenciadores;
 	TMap<FString, uint32> MapTarjetasPlantas;
+
 	//PLanta
+	
 	int32 NumberPLantLanzaGuizantes = 3;
 	int32 NumberPLantGirasol = 2;
 	int32 NumberPLantRepetidora = 5;
 	int32 NumberPLantNuez = 2;
 	int32 NumberPLantHongo = 1;
 	int32 NumberPLantSpawned = 0;
+
 	//Zombie
 	int32 NumberZombiesOrda = 20;
-	int32 NumberZombiesComun = 10;
+	int32 NumberZombiesComun = 8;
 	int32 NumberZombiesCono = 5;
 	int32 NumberZombiesCubo = 2;
 	int32 NumberZombiesSenal = 3;
@@ -52,6 +57,9 @@ protected:
 
 	class APlant* SpawnPlant(FVector _spawnPosition);
 
+
+	
+
 	class ALanzaguisantes* SpawnPlantLanzaguisantes(FVector _spawnPosition);
 	class AGirasol* SpawnPlantGirasol(FVector _spawnPosition);
 	class ARepetidora* SpawnPlantRepetidora(FVector _spawnPosition);
@@ -62,6 +70,7 @@ protected:
 	float TiempoTranscurridoSiguientePala = 0.0f;
 	float TiempoTranscurridoSiguienteAbono = 0.0f;
 	//PLanta LanzaGuizante
+	
 	float TiempoTrancurridoSiguienteTarjetaLanzaguisantes = 0.0f;
 	float TiempoTrancurridoSiguienteTarjetaGirasol = 0.0f;
 	float TiempoTrancurridoSiguienteTarjetaNuez = 0.0f;
@@ -79,6 +88,7 @@ protected:
 	void TimerCallBackTarjetasPlantaNuez();
 	void VisualizarPotenciadores();
 	void VisualizarTarjetasPlantas();
+	
 
 };
 

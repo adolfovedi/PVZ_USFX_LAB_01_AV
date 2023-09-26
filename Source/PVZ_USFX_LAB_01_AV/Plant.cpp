@@ -23,7 +23,7 @@ APlant::APlant()
 	PlantMeshComponent->SetSimulatePhysics(false);
 	PlantMeshComponent->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	RootComponent = PlantMeshComponent;
-
+	energia = 25;
 	bCanFire = true;
 	GunOffset = FVector(90.f, 0.f, 0.f);
 	FireRate = 0.2f;
