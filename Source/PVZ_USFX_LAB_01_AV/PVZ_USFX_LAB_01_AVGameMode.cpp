@@ -17,8 +17,13 @@
 #include "Nuez.h"
 #include "Hongo.h"
 #include "Sol.h"
-#include "Fenix.h"
 
+#include "Jugador.h"
+#include "Controlador.h"
+#include "HUDPlantas.h"
+#include "Planta_Ataque.h"
+#include "Math/UnrealMathUtility.h"
+#include "Engine/Engine.h"
 
 APVZ_USFX_LAB_01_AVGameMode::APVZ_USFX_LAB_01_AVGameMode()
 {
@@ -26,6 +31,29 @@ APVZ_USFX_LAB_01_AVGameMode::APVZ_USFX_LAB_01_AVGameMode()
 	// set default pawn class to our character class
 	PrimaryActorTick.bCanEverTick = true;
 	DefaultPawnClass = APVZ_USFX_LAB_01_AVPawn::StaticClass();
+
+	//-----------------------------------------------
+
+	//Definiendo el Pawn o Peon
+	DefaultPawnClass = AJugador::StaticClass();
+	//Definiendo el Controlador
+	PlayerControllerClass = AControlador::StaticClass();
+	//Definiendo el HUD
+	HUDClass = AHUDPlantas::StaticClass();
+
+
+
+	contador = FVector(0, 0, 0);
+	localizacion = FVector(400.0, 200.0, 100.0);
+	contador2 = 0;
+
+	TiempoTranscurrido = 0.0f;
+
+
+	FilaActual = 1;
+	ColumnaActual = 1;
+//-----------------------------------------------------
+
 
 	MapPotenciadores.Add(TEXT("Sol"), 0);
 	MapPotenciadores.Add(TEXT("Abono"), 1);
@@ -54,21 +82,64 @@ APVZ_USFX_LAB_01_AVGameMode::APVZ_USFX_LAB_01_AVGameMode()
 
 }
 
+//-------------------------------------
+void APVZ_USFX_LAB_01_AVGameMode::aumentovelocidad()
+{
+	for (int i = 0; i < Zombies.Num(); i++)
+	{
+		Zombies[i]->MovementSpeed = +FMath::FRandRange(0, 0.2);
+	}
 
+}
+
+void APVZ_USFX_LAB_01_AVGameMode::MostrarEnergiaDePlantas()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Este es un mensaje")));
+
+	NombrePlanta = FString::Printf(TEXT("Planta %d_%d"), FilaActual, ColumnaActual);
+
+	APlant* Planta = Plantas.FindRef(NombrePlanta);
+
+	if (Planta)
+	{
+		FString Mensaje = FString::Printf(TEXT("%s: Energia %i"), *NombrePlanta, Planta->energia);
+
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, Mensaje);
+
+		UE_LOG(LogTemp, Warning, TEXT("%s"), *Mensaje);
+
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("No se encontró la planta")));
+	}
+
+	ColumnaActual++;
+
+	if (ColumnaActual > 2) // Ajusta este valor al número total de columnas
+	{
+		ColumnaActual = 1;
+		FilaActual++;
+
+		if (FilaActual > 5) // Ajusta este valor al número total de filas
+		{
+			FilaActual = 1;
+		}
+	}
+}
+
+//--------------------------------------------------
 void APVZ_USFX_LAB_01_AVGameMode::BeginPlay()
 {
 	Super::BeginPlay();
 
+	
 	FTransform SpawnLocation;
 	SpawnLocation.SetLocation(FVector(-1500.0f, 1200.0f, 200.0f));
 
 	ASol* Sol1 = GetWorld()->SpawnActor<ASol>(ASol::StaticClass(), FVector(-400.0f, -50.0f, 160.0f), FRotator::ZeroRotator);
 	ASol* Sol2 = GetWorld()->SpawnActor<ASol>(ASol::StaticClass(), FVector(-450, -50, 160), FRotator::ZeroRotator);
-
-
-	//	// Establece el número de soles que deseas crear
 	
-
 
 	
 	//-------------------------------------->ZombiesComun<------------------------
@@ -151,11 +222,6 @@ void APVZ_USFX_LAB_01_AVGameMode::BeginPlay()
 	}
 
 	
-	
-
-
-
-
 
 	//-------------------------------------------->LanzaGuizantes<------------------------------------------------
 
@@ -286,6 +352,7 @@ void APVZ_USFX_LAB_01_AVGameMode::BeginPlay()
 	MapPotenciadores.Add(TEXT("Pala"), 5);
 
 	UWorld* const World = GetWorld();
+
 	if (World != nullptr)
 	{
 		// spawn the projectile
@@ -371,6 +438,24 @@ void APVZ_USFX_LAB_01_AVGameMode::Tick(float DeltaTime)
 else {
 	VisualizarPotenciadores();
 }*/
+}
+
+void APVZ_USFX_LAB_01_AVGameMode::Spawn()
+{
+	contador2++;
+
+	contador = contador + FVector(100, 0, 0);
+	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Este es un mensaje")));
+
+
+	AZombie* Zombie1 = GetWorld()->SpawnActor<AZombie>(AZombie::StaticClass(), localizacion, FRotator::ZeroRotator);
+
+
+
+	localizacion.X = localizacion.X + contador2 * 100;
+	localizacion.Y = localizacion.Y + contador2 * 100;
+	//localizacion = localizacion + contador;
+
 }
 
 
@@ -475,9 +560,6 @@ AHongo* APVZ_USFX_LAB_01_AVGameMode::SpawnPlantHongo(FVector _spawnPosition)
 	SpawnLocation.SetLocation(_spawnPosition);
 	return GetWorld()->SpawnActor<AHongo>(AHongo::StaticClass(), SpawnLocation);
 }
-
-
-
 
 
 void APVZ_USFX_LAB_01_AVGameMode::TimerCallBackPotenciadoresAgua()

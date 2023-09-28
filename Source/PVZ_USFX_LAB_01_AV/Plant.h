@@ -4,8 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Components/BoxComponent.h"
 #include "Plant.generated.h"
-
 class UStaticMeshComponent;
 
 UCLASS(Abstract)
@@ -22,6 +22,8 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	//UPROPERTY(EditAnywhere)
+	//UStaticMeshComponent* MeshPlanta
 
 public:
 	// Called every frame

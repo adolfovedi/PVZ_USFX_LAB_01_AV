@@ -28,6 +28,8 @@ void ASol::BeginPlay()
 {
 	Super::BeginPlay();
 
+
+
 }
 
 // Called every frame
@@ -35,4 +37,42 @@ void ASol::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void ASol::ManejoClick()
+{
+	// Check we are not already active
+	if (!bIsActive)
+	{
+		bIsActive = true;
+		Destroy();
+		// Change material
+		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Aumento la cantidad de soles")));
+
+	}
+
+}
+
+void ASol::Resaltado(bool bOn)
+{
+	// Do not highlight if the block has already been activated.
+	if (bIsActive)
+	{
+		//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("1Grilla a usar: %s"), *GetName()));
+		return;
+	}
+
+	if (bOn)
+	{
+		//BlockMesh->SetMaterial(0, BaseMaterial);
+		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Un sol, nosé %s"), *GetName()));
+
+	}
+	else
+	{
+		//BlockMesh->SetMaterial(0, BlueMaterial);
+		//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Nose xd")));
+
+	}
+	
 }

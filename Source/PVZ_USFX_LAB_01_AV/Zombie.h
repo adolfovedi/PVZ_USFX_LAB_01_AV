@@ -4,8 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Components/BoxComponent.h"
 #include "Zombie.generated.h"
-
 UCLASS(Abstract)
 class PVZ_USFX_LAB_01_AV_API AZombie : public AActor
 {
@@ -46,4 +46,5 @@ public:
 	FORCEINLINE void SetSpawnAfter(float _SpawnAfter) { SpawnAfter = _SpawnAfter; }
 	FORCEINLINE float GetSpawnAfter() { return SpawnAfter; }
 	FORCEINLINE void SetCanMove(bool _bCanMove) { bCanMove = _bCanMove; }
+	FString TagString;
 };

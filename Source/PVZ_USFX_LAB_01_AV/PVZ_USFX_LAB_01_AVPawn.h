@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "PVZ_USFX_LAB_01_AVPawn.generated.h"
+class APlant;
+
 
 UCLASS(Blueprintable)
 class APVZ_USFX_LAB_01_AVPawn : public APawn
@@ -46,7 +48,12 @@ public:
 	virtual void Tick(float DeltaSeconds) override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 	// End Actor Interface
+	//--------------------------------------------------------
+	FTimerHandle Temporizador;
+	void spawnplanta();
+	TArray<APlant*> vectorPlants;
 
+	//-------------------------------------------------------
 	/* Fire a shot in the specified direction */
 	void FireShot(FVector FireDirection);
 
@@ -74,5 +81,12 @@ public:
 	FORCEINLINE class UCameraComponent* GetCameraComponent() const { return CameraComponent; }
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
+//----------------------------------------------------------
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+
+	//-----------------------------------------------------------------
 };
 

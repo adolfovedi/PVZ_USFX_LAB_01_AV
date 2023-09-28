@@ -44,12 +44,63 @@ public:
 	TMap<FName, int32> mOrdaZombies;
 	int32 NumberZombiesSpawned = 0;
 	TArray<APlant*> aPlantas;
+	TMap<FString, APlant*> Plantas;
+	FString NombrePlanta;
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	
+
+	FTimerHandle Temporizador;
+
+	void Spawn();
+
+	FVector contador;
+
+
+	int contador2;
+
+
+	FVector localizacion;
+
+
+	// Declarar un vector de objetos
+	TArray<AZombie*> Zombies;
+
+
+	// Declarar un contenedor tipo TMap de objetos
+	//TMap<FString, APlant*> Plantas;
+
+	// Declarar un vector de objetos
+
+	/*TArray<APlant*> Plantas;*/
+
+	//float TiempoTranscurrido;
+
+	void aumentovelocidad();
+
+	void MostrarEnergiaDePlantas();
+
+
+	class AZombieComun* NuevoZombie;
+
+
+	FTimerHandle Temporizador2;
+
+
+	class ALanzaguisantes* NuevaPlantaGuisante;
+
+
+
+	int FilaActual;
+	int ColumnaActual;
+
+	//------------------------------------
+
 protected:
 	virtual void BeginPlay() override;
-	//
+
+
 	class AZombieComun* SpawnZombieComun(FVector _spawnPosition);
 	class AZombieCono* SpawnZombieCono(FVector _spawnPosition);
 	class AZombieCubo* SpawnZombieCubo(FVector _spawnPosition);

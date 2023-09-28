@@ -4,6 +4,10 @@
 #include "Plant.h"
 #include "PVZ_USFX_LAB_01_AVProjectile.h"
 #include "Zombie.h"
+//#include "PVZ_USFX_LAB02GameModeBase.h"
+//#include "UObject/ConstructorHelpers.h"
+//#include "Components/StaticMeshComponent.h"
+//#include "Components/BoxComponent.h"
 
 // Sets default values
 APlant::APlant()
@@ -96,7 +100,7 @@ void APlant::FireShot(FVector FireDirection)
 			}
 
 			bCanFire = false;
-			World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, this, &APlant::ShotTimerExpired, FireRate);
+			World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, this, & APlant::ShotTimerExpired, FireRate);
 
 			//// try and play the sound if specified
 			//if (FireSound != nullptr)

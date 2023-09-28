@@ -1,0 +1,183 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
+#include "SSeleccion_plantas.h"
+#include "SlateOptMacros.h"
+#include "Widgets/SBoxPanel.h"
+#include "Widgets/Images/SImage.h"
+#include "Widgets/Layout/SBorder.h"
+#include "HUDPlantas.h"
+
+
+void SSeleccion_Plantas::Construct(const FArguments& InArgs)
+{
+	/*
+	ChildSlot
+	[
+		// Populate the widget
+	];
+	*/
+	bCanSupportFocus = true;
+	OwningHUD = InArgs._OwningHUD;
+
+	FMargin ContentPadding = FMargin(30, 20);
+
+	FMargin ButtonPadding = FMargin(200, 20, 10, 5);
+
+
+	const FText TitleText = FText::FromString("Seleccion \n de \nplantas");
+	const FText ButtonText = FText::FromString("Cerrar HUD");
+
+	FSlateFontInfo ButtonTextStyle = FCoreStyle::Get().GetFontStyle("EmbossedText");
+	ButtonTextStyle.Size = 25.f;
+
+	FSlateFontInfo TitleTextStyle = FCoreStyle::Get().GetFontStyle("EmbossedText");
+	TitleTextStyle.Size = 30.f;
+
+	ChildSlot
+		[
+			SNew(SOverlay)
+
+				+ SOverlay::Slot()
+				.HAlign(HAlign_Left)
+				.VAlign(VAlign_Top)
+				.Padding(ButtonPadding) // Ajusta el relleno según sea necesario
+
+				[
+					SNew(SBox)
+						.WidthOverride(1000) // Ancho del fondo
+						.HeightOverride(100) // Altura del fondo    
+						.HAlign(HAlign_Fill)
+						.VAlign(VAlign_Fill)
+
+						[
+							SNew(SBorder)
+								.BorderBackgroundColor(FColor::Blue)// Color del borde
+								[
+									SNew(SOverlay)
+										+ SOverlay::Slot()
+										[
+											SNew(SImage)
+												.ColorAndOpacity(FColor::Black)
+										]
+										+ SOverlay::Slot()
+										[
+											SNew(SHorizontalBox)
+												//Boton 1
+												+ SHorizontalBox::Slot()
+												[
+													SNew(SButton)
+														.OnClicked(this, &SSeleccion_Plantas::OnClicked)
+														[
+															SNew(STextBlock)
+																.Font(ButtonTextStyle)
+																.Text(FText::FromString("Planta 1"))
+																.Justification(ETextJustify::Center)
+														]
+												]
+												//Boton 2
+												+ SHorizontalBox::Slot()
+												[
+													SNew(SButton)
+														.OnClicked(this, &SSeleccion_Plantas::OnClicked)
+														[
+															SNew(STextBlock)
+																.Font(ButtonTextStyle)
+																.Text(FText::FromString("Planta 2"))
+																.Justification(ETextJustify::Center)
+														]
+												]
+												//Boton 3
+												+ SHorizontalBox::Slot()
+												[
+													SNew(SButton)
+														.OnClicked(this, &SSeleccion_Plantas::SpawnPLanta)
+														[
+															SNew(STextBlock)
+																.Font(ButtonTextStyle)
+																.Text(FText::FromString("Spawn planta"))
+																.Justification(ETextJustify::Center)
+														]
+												]
+												//Boton quitar menu
+												+ SHorizontalBox::Slot()
+												[
+													SNew(SButton)
+														.OnClicked(this, &SSeleccion_Plantas::QuitarMenu)
+														[
+															SNew(STextBlock)
+																.Font(ButtonTextStyle)
+																.Text(ButtonText)
+																.Justification(ETextJustify::Center)
+														]
+												]
+										]
+								]
+						]
+				]
+
+				+ SOverlay::Slot()
+				.HAlign(HAlign_Left)
+				.VAlign(VAlign_Top)
+				[
+					SNew(SBox)
+						.WidthOverride(200)
+						.HeightOverride(200)
+						.HAlign(HAlign_Fill)
+						.VAlign(VAlign_Fill)
+						[
+							SNew(SHorizontalBox)
+								+ SHorizontalBox::Slot()
+								[
+									SNew(STextBlock)
+										.Justification(ETextJustify::Center)
+										.Font(TitleTextStyle)
+										.Text(TitleText)
+								]
+
+						]
+				]
+
+		];
+
+	//ChildSlot[
+	//	SNew(SOverlay)
+	//		+ SOverlay::Slot()
+	//		.HAlign(HAlign_Right)
+	//		.VAlign(VAlign_Bottom)
+	//		[
+	//			SNew(SImage)
+	//				.ColorAndOpacity(FColor::Black)
+	//		]
+
+	//];
+
+
+
+
+}
+FReply SSeleccion_Plantas::OnClicked()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Boton 1"));
+	return FReply::Handled();
+}
+FReply SSeleccion_Plantas::QuitarMenu()
+{
+	if (OwningHUD.IsValid())
+	{
+		OwningHUD->QuitarHud();
+	}
+
+	return FReply::Handled();
+}
+FReply SSeleccion_Plantas::SpawnPLanta()
+{
+	if (OwningHUD.IsValid())
+	{
+		OwningHUD->SpawnPlanta();
+
+	}
+
+	return FReply::Handled();
+}
+
