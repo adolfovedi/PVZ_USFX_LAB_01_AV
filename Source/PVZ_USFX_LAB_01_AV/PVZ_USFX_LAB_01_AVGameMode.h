@@ -4,7 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "Plant.h"
 #include "PVZ_USFX_LAB_01_AVGameMode.generated.h"
+
 
 class APotenciador;
 
@@ -41,6 +43,12 @@ public:
 	int32 NumberZombiesCubo = 2;
 	int32 NumberZombiesSenal = 3;
 
+	//Mostrar mensaje---------------------------------------------------
+
+	void MostrarNumeroProyectiles();
+
+
+	//---------------------------------------------
 	TMap<FName, int32> mOrdaZombies;
 	int32 NumberZombiesSpawned = 0;
 	TArray<APlant*> aPlantas;

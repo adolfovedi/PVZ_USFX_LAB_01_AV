@@ -22,8 +22,8 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	//UPROPERTY(EditAnywhere)
-	//UStaticMeshComponent* MeshPlanta
+	/*UPROPERTY(EditAnywhere)
+	UStaticMeshComponent* MeshPlanta*/
 
 public:
 	// Called every frame
@@ -38,7 +38,13 @@ public:
 	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
 	float FireRate;
 	int energia;
+	//----------------------------------------
+
 	void ShotTimerExpired();
+	//*************variable para realizar un seguimiento TotalProyectilesDisparados-----------------
+	static int32 TotalProyectilesDisparados;
+	//-----------------------------------------------
+
 
 	float TiempoTranscurrido;
 	float TiempoEntreDisparos;

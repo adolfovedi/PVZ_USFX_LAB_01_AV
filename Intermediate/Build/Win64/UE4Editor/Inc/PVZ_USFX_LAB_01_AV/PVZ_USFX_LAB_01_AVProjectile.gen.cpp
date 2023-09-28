@@ -137,6 +137,10 @@ void EmptyLinkFunctionForGeneratedCodePVZ_USFX_LAB_01_AVProjectile() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileMovement_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ProjectileMovement;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MeshBala_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MeshBala;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -176,9 +180,18 @@ void EmptyLinkFunctionForGeneratedCodePVZ_USFX_LAB_01_AVProjectile() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APVZ_USFX_LAB_01_AVProjectile_Statics::NewProp_ProjectileMovement = { "ProjectileMovement", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APVZ_USFX_LAB_01_AVProjectile, ProjectileMovement), Z_Construct_UClass_UProjectileMovementComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APVZ_USFX_LAB_01_AVProjectile_Statics::NewProp_ProjectileMovement_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APVZ_USFX_LAB_01_AVProjectile_Statics::NewProp_ProjectileMovement_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APVZ_USFX_LAB_01_AVProjectile_Statics::NewProp_MeshBala_MetaData[] = {
+		{ "Category", "PVZ_USFX_LAB_01_AVProjectile" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "PVZ_USFX_LAB_01_AVProjectile.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APVZ_USFX_LAB_01_AVProjectile_Statics::NewProp_MeshBala = { "MeshBala", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APVZ_USFX_LAB_01_AVProjectile, MeshBala), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APVZ_USFX_LAB_01_AVProjectile_Statics::NewProp_MeshBala_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APVZ_USFX_LAB_01_AVProjectile_Statics::NewProp_MeshBala_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APVZ_USFX_LAB_01_AVProjectile_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APVZ_USFX_LAB_01_AVProjectile_Statics::NewProp_ProjectileMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APVZ_USFX_LAB_01_AVProjectile_Statics::NewProp_ProjectileMovement,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APVZ_USFX_LAB_01_AVProjectile_Statics::NewProp_MeshBala,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APVZ_USFX_LAB_01_AVProjectile_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APVZ_USFX_LAB_01_AVProjectile>::IsAbstract,
@@ -207,7 +220,7 @@ void EmptyLinkFunctionForGeneratedCodePVZ_USFX_LAB_01_AVProjectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APVZ_USFX_LAB_01_AVProjectile, 534147088);
+	IMPLEMENT_CLASS(APVZ_USFX_LAB_01_AVProjectile, 3330188733);
 	template<> PVZ_USFX_LAB_01_AV_API UClass* StaticClass<APVZ_USFX_LAB_01_AVProjectile>()
 	{
 		return APVZ_USFX_LAB_01_AVProjectile::StaticClass();

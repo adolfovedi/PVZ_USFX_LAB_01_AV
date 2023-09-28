@@ -9,6 +9,9 @@ C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LA
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/ActorJerarquico.gen.cpp
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/ActorJerarquico.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\ActorJerarquico.generated.h
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/Controlador.gen.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/Controlador.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Controlador.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/CustomSceneComponent.gen.cpp
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/CustomSceneComponent.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\CustomSceneComponent.generated.h
@@ -21,9 +24,35 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Plant.generated.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Girasol.generated.h
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/GridaManager.gen.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/GridaManager.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\GridaManager.generated.h
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/Grilla.gen.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/Grilla.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Grilla.generated.h
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/Grilla_Agua.gen.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/Grilla_Agua.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Grilla_Agua.generated.h
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/Grilla_Pasto.gen.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/Grilla_Pasto.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Grilla_Pasto.generated.h
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/Guisantralladora.gen.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/Guisantralladora.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Guisantralladora.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/Hongo.gen.cpp
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/Hongo.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Hongo.generated.h
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/HUDPlantas.gen.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/HUDPlantas.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInfo.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\HUDPlantas.generated.h
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/Jugador.gen.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/Jugador.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Jugador.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/Lanzaguisantes.gen.cpp
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/Lanzaguisantes.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Lanzaguisantes.generated.h
@@ -51,9 +80,6 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFra
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\PVZ_USFX_LAB_01_AVPawn.generated.h
-C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/PVZ_USFX_LAB_01_AVProjectile.gen.cpp
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/PVZ_USFX_LAB_01_AVProjectile.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\PVZ_USFX_LAB_01_AVProjectile.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/PVZ_USFX_LAB_0Q1_AVGameStateBase.gen.cpp
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/PVZ_USFX_LAB_0Q1_AVGameStateBase.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameStateBase.h
@@ -68,6 +94,9 @@ C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LA
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/Sol.gen.cpp
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/Sol.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Sol.generated.h
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/StiloWidgetSlateWidgetStyle.gen.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/StiloWidgetSlateWidgetStyle.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\StiloWidgetSlateWidgetStyle.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/Zombie.gen.cpp
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/Zombie.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Zombie.generated.h

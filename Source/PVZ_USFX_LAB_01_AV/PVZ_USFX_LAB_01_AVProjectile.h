@@ -4,8 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "GameFramework/Character.h"
 #include "PVZ_USFX_LAB_01_AVProjectile.generated.h"
-
 class UProjectileMovementComponent;
 class UStaticMeshComponent;
 
@@ -37,6 +37,8 @@ public:
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	UPROPERTY(EditAnywhere)
+	UStaticMeshComponent* MeshBala;
 
 	float DamageGenerates = 10.0f;
 	float MaxDistance = 400.0f;

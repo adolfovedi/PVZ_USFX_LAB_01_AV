@@ -10,6 +10,9 @@
 //#include "Components/BoxComponent.h"
 
 // Sets default values
+//
+int32 APlant::TotalProyectilesDisparados = 0;
+
 APlant::APlant()
 {
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
@@ -34,6 +37,12 @@ APlant::APlant()
 	TiempoTranscurrido = 0.0f;
 	TiempoEntreDisparos = 1.0f;
 	Tags.Add(TEXT("Plant"));
+	//---------------------------------------------
+	if (TotalProyectilesDisparados == 0) {
+
+		TotalProyectilesDisparados = 0;
+	}
+	//-----------------------------------------------------
 }
 
 //void APlant::OnOverlapBegin(AActor* OverlappedActor, AActor* OtherActor)
@@ -79,7 +88,7 @@ void APlant::Tick(float DeltaTime)
 	}
 
 }
-
+//------------------------------------------------------
 void APlant::FireShot(FVector FireDirection)
 {
 	// If it's ok to fire again
@@ -99,8 +108,8 @@ void APlant::FireShot(FVector FireDirection)
 				World->SpawnActor<APVZ_USFX_LAB_01_AVProjectile>(SpawnLocation, FireRotation);
 			}
 
-			bCanFire = false;
-			World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, this, & APlant::ShotTimerExpired, FireRate);
+			////bCanFire = false;
+			////World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, this, & APlant::ShotTimerExpired, FireRate);
 
 			//// try and play the sound if specified
 			//if (FireSound != nullptr)
@@ -109,10 +118,15 @@ void APlant::FireShot(FVector FireDirection)
 			//}
 
 			//bCanFire = false;
+			//-------------------------------------------------------------------
+			TotalProyectilesDisparados++;
+			bCanFire = false;
+			World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, this, &APlant::ShotTimerExpired, FireRate);
+			//----------------------------------------------------------------------
 		}
 	}
 }
-
+//--------------------------------------------------
 void APlant::ShotTimerExpired()
 {
 	bCanFire = true;

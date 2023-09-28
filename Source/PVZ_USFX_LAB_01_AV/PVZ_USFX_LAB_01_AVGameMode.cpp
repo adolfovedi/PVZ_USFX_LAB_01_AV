@@ -362,6 +362,15 @@ void APVZ_USFX_LAB_01_AVGameMode::BeginPlay()
 
 }
 
+//----------------------------------------------------------------------
+void APVZ_USFX_LAB_01_AVGameMode::MostrarNumeroProyectiles()
+{
+	//Mostrar el Numero total de proyectiles disparados en la consola 
+	UE_LOG(LogTemp, Warning, TEXT("Numero total de proyectiles disparados: %d"), APlant::TotalProyectilesDisparados);
+}
+//-----------------------------------------------------------------
+
+
 void APVZ_USFX_LAB_01_AVGameMode::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
