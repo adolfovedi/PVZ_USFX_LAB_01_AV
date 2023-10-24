@@ -38,8 +38,9 @@ public:
 	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
 	float FireRate;
 	int energia;
-	//----------------------------------------
 
+	 
+	//----------------------------------------
 	void ShotTimerExpired();
 	//*************variable para realizar un seguimiento TotalProyectilesDisparados-----------------
 	static int32 TotalProyectilesDisparados;

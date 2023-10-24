@@ -17,6 +17,11 @@ class APVZ_USFX_LAB_01_AVGameMode : public AGameModeBase
 
 public:
 	APVZ_USFX_LAB_01_AVGameMode();
+	//-----------------------------------------
+	void Patrones();
+
+	void EjemploPatrones();
+	//---------------------------------------
 	TArray<class Asol*> ArraySol;
 	TArray<class AZombie*> ArrayZombies;
 	TArray<class APlant*> ArrayPlants;
@@ -147,6 +152,7 @@ protected:
 	void TimerCallBackTarjetasPlantaNuez();
 	void VisualizarPotenciadores();
 	void VisualizarTarjetasPlantas();
+	/*void TimerHandle_MostrarProyectiles();*/
 	
 
 };

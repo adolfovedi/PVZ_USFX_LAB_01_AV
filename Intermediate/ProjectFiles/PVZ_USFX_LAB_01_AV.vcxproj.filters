@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\PVZ_USFX_LAB_01_AV.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{59660F8C-EDE6-4CA7-A16F-FB73FAB1AE10}</UniqueIdentifier>
+      <UniqueIdentifier>{2352E960-11B9-4C24-8457-13127A61FAEB}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PVZ_USFX_LAB_01_AV.Target.cs">
       <Filter>Source</Filter>
@@ -13,8 +13,9 @@
     </None>
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
+    <None Include="..\..\Source.zip" />
     <Filter Include="Config">
-      <UniqueIdentifier>{0D223155-D242-40D5-B562-9BFFE7773F80}</UniqueIdentifier>
+      <UniqueIdentifier>{D0ECE9E7-2B20-4F54-90A2-70DDB3852419}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +33,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\PVZ_USFX_LAB_01_AV">
-      <UniqueIdentifier>{1BAE5FDE-DB0F-44FF-A09F-43CA1E459758}</UniqueIdentifier>
+      <UniqueIdentifier>{D80A733F-AAD2-4889-8A23-E57E131D22F9}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\AbonoMagico.cpp">
       <Filter>Source\PVZ_USFX_LAB_01_AV</Filter>
@@ -124,6 +125,12 @@
     <ClInclude Include="..\..\Source\PVZ_USFX_LAB_01_AV\MegaSol.h">
       <Filter>Source\PVZ_USFX_LAB_01_AV</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\MyActor.cpp">
+      <Filter>Source\PVZ_USFX_LAB_01_AV</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB_01_AV\MyActor.h">
+      <Filter>Source\PVZ_USFX_LAB_01_AV</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\Nuez.cpp">
       <Filter>Source\PVZ_USFX_LAB_01_AV</Filter>
     </ClCompile>
@@ -211,6 +218,12 @@
     <ClInclude Include="..\..\Source\PVZ_USFX_LAB_01_AV\SSeleccion_Plantas.h">
       <Filter>Source\PVZ_USFX_LAB_01_AV</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\StarShipFacade.cpp">
+      <Filter>Source\PVZ_USFX_LAB_01_AV</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB_01_AV\StarShipFacade.h">
+      <Filter>Source\PVZ_USFX_LAB_01_AV</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\StiloWidgetSlateWidgetStyle.cpp">
       <Filter>Source\PVZ_USFX_LAB_01_AV</Filter>
     </ClCompile>
@@ -246,6 +259,54 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\PVZ_USFX_LAB_01_AV\ZombieSenal.h">
       <Filter>Source\PVZ_USFX_LAB_01_AV</Filter>
+    </ClInclude>
+    <Filter Include="Source\PVZ_USFX_LAB_01_AV\EJEMPLO">
+      <UniqueIdentifier>{4DCCB983-B100-448A-9E95-B151C38BCD65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method">
+      <UniqueIdentifier>{17212C22-A790-4F91-9822-6CFD06C94138}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\FactoryMethod_Principal.cpp">
+      <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\FactoryMethod_Principal.h">
+      <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\GeneradorZombies.cpp">
+      <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\GeneradorZombies.h">
+      <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\GeneradorZombiesAgua.cpp">
+      <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\GeneradorZombiesAgua.h">
+      <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\GeneradorZombiesTierra.cpp">
+      <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\GeneradorZombiesTierra.h">
+      <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\ZombieAguaBuzo.cpp">
+      <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\ZombieAguaBuzo.h">
+      <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\Zombies.cpp">
+      <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\Zombies.h">
+      <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\ZombieTierraGlobo.cpp">
+      <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\ZombieTierraGlobo.h">
+      <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

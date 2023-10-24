@@ -24,7 +24,28 @@
 #include "Planta_Ataque.h"
 #include "Math/UnrealMathUtility.h"
 #include "Engine/Engine.h"
+//-------------------------------------PATRONES--------------------
+//#include "GeneradorZombies.h"
+//#include "GeneradorZombiesAgua.h"
+//#include "GeneradorZombiesTierra.h"
+//#include "Zombies.h"
+//#include "ZombiesAguaBuzo.h"
+//#include "ZombieTierraGlobo.h"
+//#include "ZombieTierraMinero.h"
+//#include "FactoryMethod_Principal.h"
 
+
+//-------------------------------------PATRONES--------------------
+//#include "Libro/Builder_Pattern/Builder_Main.h"
+//#include "Libro/Factory_Pattern/FactoryMethod_Main.h"
+//#include "Libro/Singleton_Pattern/Singleton_Main.h"
+//#include "Libro/Decorator_Pattern/Decorator_Main.h"
+//#include "Libro/Observer_Pattern/Observer_Main.h"
+//
+//#include "Ejemplo/Factory_Method/FactoryMethod_Principal.h"
+//#include "Ejemplo/Decorator/Decorator_Principal.h"
+//#include "Ejemplo/Observer/Observer_Principal.h"
+//------------------------------------------------------------------
 APVZ_USFX_LAB_01_AVGameMode::APVZ_USFX_LAB_01_AVGameMode()
 {
 
@@ -128,7 +149,36 @@ void APVZ_USFX_LAB_01_AVGameMode::MostrarEnergiaDePlantas()
 	}
 }
 
-//--------------------------------------------------
+//-------------------------------------------------- PATRONES -------------------- 
+
+//void APVZ_USFX_LAB_01_AVGameMode::EjemploPatrones()
+//{
+//	AFactoryMethod_Principal* FactoryMethod = GetWorld()->SpawnActor<AFactoryMethod_Principal>(AFactoryMethod_Principal::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
+//
+//	//ADecorator_Principal* Decorator = GetWorld()->SpawnActor<ADecorator_Principal>(ADecorator_Principal::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
+//
+//	//AObserver_Principal* Observer = GetWorld()->SpawnActor<AObserver_Principal>(AObserver_Principal::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
+//
+//}
+//
+//void APVZ_USFX_LAB_01_AVGameMode::Patrones()
+//{
+//
+//	//ABuilder_Main* Builder = GetWorld()->SpawnActor<ABuilder_Main>(ABuilder_Main::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
+//
+//	//ASingleton_Main* Singleton = GetWorld()->SpawnActor<ASingleton_Main>(ASingleton_Main::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
+//
+//	//AFactoryMethod_Main* FactoryMethod = GetWorld()->SpawnActor<AFactoryMethod_Main>(AFactoryMethod_Main::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
+//
+//	//ADecorator_Main* Decorator = GetWorld()->SpawnActor<ADecorator_Main>(ADecorator_Main::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
+//
+//	//AObserver_Main* Observer = GetWorld()->SpawnActor<AObserver_Main>(AObserver_Main::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
+//
+//
+//
+//}
+//-------------------------------------------------- PATRONES --------------------
+
 void APVZ_USFX_LAB_01_AVGameMode::BeginPlay()
 {
 	Super::BeginPlay();
@@ -357,7 +407,7 @@ void APVZ_USFX_LAB_01_AVGameMode::BeginPlay()
 	{
 		// spawn the projectile
 		World->GetTimerManager().SetTimer(TimerHandleTarjetasPlantaNuez, this, &APVZ_USFX_LAB_01_AVGameMode::TimerCallBackTarjetasPlantaNuez, 15.0f);
-
+		//GetWorldTimerManager().SetTimer(TotalProyectilesDisparados, this, &APVZ_USFX_LAB_01_AVGameMode::MostrarNumeroProyectiles, 5.0f, true);
 	}
 
 }
@@ -367,6 +417,7 @@ void APVZ_USFX_LAB_01_AVGameMode::MostrarNumeroProyectiles()
 {
 	//Mostrar el Numero total de proyectiles disparados en la consola 
 	UE_LOG(LogTemp, Warning, TEXT("Numero total de proyectiles disparados: %d"), APlant::TotalProyectilesDisparados);
+	//GetWorldTimerManager().SetTimer(TimerHandle_MostrarProyectiles, this, &APVZ_USFX_LAB_01_AVGameMode::MostrarNumeroProyectiles, 5.0f, true);
 }
 //-----------------------------------------------------------------
 
@@ -489,6 +540,11 @@ void APVZ_USFX_LAB_01_AVGameMode::VisualizarTarjetasPlantas() {
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Planta: %s, tiempo recarga: %d"), *Llave, Valor));
 	}
 }
+
+//void APVZ_USFX_LAB_01_AVGameMode::TimerHandle_MostrarProyectiles()
+//{
+//
+//}
 
 
 //AZombie* APVZ_USFX_LAB02GameMode::SpawnZombie(FVector _spawnPosition)

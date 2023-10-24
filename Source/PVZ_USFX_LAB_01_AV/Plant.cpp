@@ -108,8 +108,8 @@ void APlant::FireShot(FVector FireDirection)
 				World->SpawnActor<APVZ_USFX_LAB_01_AVProjectile>(SpawnLocation, FireRotation);
 			}
 
-			////bCanFire = false;
-			////World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, this, & APlant::ShotTimerExpired, FireRate);
+			bCanFire = false;
+			World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, this, & APlant::ShotTimerExpired, FireRate);
 
 			//// try and play the sound if specified
 			//if (FireSound != nullptr)
@@ -118,6 +118,7 @@ void APlant::FireShot(FVector FireDirection)
 			//}
 
 			//bCanFire = false;
+			// 
 			//-------------------------------------------------------------------
 			TotalProyectilesDisparados++;
 			bCanFire = false;
