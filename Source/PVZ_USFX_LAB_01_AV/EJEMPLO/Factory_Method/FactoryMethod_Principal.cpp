@@ -2,6 +2,8 @@
 
 
 #include "FactoryMethod_Principal.h"
+#include "GeneradorZombiesAgua.h"
+#include "GeneradorZombiesTierra.h"
 
 // Sets default values
 AFactoryMethod_Principal::AFactoryMethod_Principal()
@@ -16,6 +18,28 @@ void AFactoryMethod_Principal::BeginPlay()
 {
 	Super::BeginPlay();
 	
+
+	//Crea los generadores de zombies
+	AGeneradorZombies* GeneradorZombiesAgua = GetWorld()->SpawnActor<AGeneradorZombiesAgua>(AGeneradorZombiesAgua::StaticClass());
+	AGeneradorZombies* GeneradorZombiesTierra = GetWorld()->SpawnActor<AGeneradorZombiesTierra>(AGeneradorZombiesTierra::StaticClass());
+
+	//Create an Outer Health Potion and log its name
+	AZombies* Zombie;
+
+
+	Zombie = GeneradorZombiesTierra->OrdenarZombies("TierraGlobo");
+	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
+
+	//Zombie = GeneradorZombiesTierra->OrdenarZombies("TierraMinero");
+	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
+
+	//Zombie = GeneradorZombiesAgua->OrdenarZombies("AguaBuzo");
+	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
+
+
+
+
+
 }
 
 // Called every frame

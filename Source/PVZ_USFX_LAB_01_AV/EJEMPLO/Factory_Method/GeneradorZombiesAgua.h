@@ -14,4 +14,9 @@ class PVZ_USFX_LAB_01_AV_API AGeneradorZombiesAgua : public AGeneradorZombies
 {
 	GENERATED_BODY()
 	
+
+public:
+	//Concoct the selected potion
+	virtual AZombies* ArmarZombies(FString ZombiesSKU) override;
+
 };

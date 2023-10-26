@@ -23,4 +23,31 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+
+protected:
+	//Nombre del Zombie
+	FString NombreZombie;
+	// "Vida" del Zombie
+	int Vida;
+
+	// "Armadura" del Zombie
+	FString Armadura;
+
+	// "Materiales" del Zombie
+	TArray<FString> Materiales;
+
+public:
+
+	// "Arma" el zombie
+	void Armar();
+
+	//"Elabora" el zombie
+	virtual void Elaboracion();
+
+	//"Libera" el zombie
+	void Liberar();
+
+	//Devuelve el nombre del zombie
+	FString GetNombreZombie();
+
 };
