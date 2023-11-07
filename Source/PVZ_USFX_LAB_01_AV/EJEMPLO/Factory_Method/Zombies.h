@@ -19,6 +19,12 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+
+	float VelocityBrickBoss;
+	FVector DireccionBrickBoss;
+	float MovingX;
+	
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -27,27 +33,47 @@ public:
 protected:
 	//Nombre del Zombie
 	FString NombreZombie;
-	// "Vida" del Zombie
+
+	UPROPERTY(EditAnywhere)
+	class UStaticMeshComponent* ZombieMeshComponent;
+
+	UPROPERTY(EditAnywhere)
+	class UBoxComponent* ZombieBoxComponent;
+
+
+	
+
+	void MorirZombie();
+
+	 
+	//"Vida" del Zombie
+
 	int Vida;
 
-	// "Armadura" del Zombie
-	FString Armadura;
 
-	// "Materiales" del Zombie
-	TArray<FString> Materiales;
+	//// "Armadura" del Zombie
+	//FString Armadura;
+
+	//// "Materiales" del Zombie
+	//TArray<FString> Materiales;
 
 public:
 
-	// "Arma" el zombie
-	void Armar();
+	//// "Arma" el zombie
+	//void Armar();
 
-	//"Elabora" el zombie
-	virtual void Elaboracion();
+	////"Elabora" el zombie
+	//virtual void Elaboracion();
 
-	//"Libera" el zombie
-	void Liberar();
+	////"Libera" el zombie
+	//void Liberar();
 
 	//Devuelve el nombre del zombie
 	FString GetNombreZombie();
+
+	virtual void NotifyHit(class UPrimitiveComponent* MyComp, AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal,
+		FVector NormalImpulse, const FHitResult& Hit)override;//esta funcion nos notifica cada golpe que de la clase.
+
+	void SetMovingX(float _MovingX);
 
 };

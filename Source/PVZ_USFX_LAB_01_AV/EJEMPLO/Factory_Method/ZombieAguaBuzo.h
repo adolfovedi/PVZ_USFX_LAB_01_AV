@@ -13,12 +13,22 @@ UCLASS()
 class PVZ_USFX_LAB_01_AV_API AZombieAguaBuzo : public AZombies
 {
 	GENERATED_BODY()
-	
+
+public:
+
+	AZombieAguaBuzo();
+
+
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+
+	
+	UPROPERTY(EditAnywhere)
+	class UStaticMeshComponent* ZombieMeshBuzo;
+
+
+
 public:
 	// Elabora el zombie
-	virtual void Elaboracion() override;
+	/*virtual void Elaboracion() override;*/
 
 };

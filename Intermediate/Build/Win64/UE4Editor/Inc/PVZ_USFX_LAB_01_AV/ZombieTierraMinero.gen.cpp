@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeZombieTierraMinero() {}
 	PVZ_USFX_LAB_01_AV_API UClass* Z_Construct_UClass_AZombieTierraMinero();
 	PVZ_USFX_LAB_01_AV_API UClass* Z_Construct_UClass_AZombies();
 	UPackage* Z_Construct_UPackage__Script_PVZ_USFX_LAB_01_AV();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 // End Cross Module References
 	void AZombieTierraMinero::StaticRegisterNativesAZombieTierraMinero()
 	{
@@ -31,6 +32,11 @@ void EmptyLinkFunctionForGeneratedCodeZombieTierraMinero() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ZombieMeshMinero_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ZombieMeshMinero;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -45,6 +51,17 @@ void EmptyLinkFunctionForGeneratedCodeZombieTierraMinero() {}
 		{ "ModuleRelativePath", "EJEMPLO/Factory_Method/ZombieTierraMinero.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AZombieTierraMinero_Statics::NewProp_ZombieMeshMinero_MetaData[] = {
+		{ "Category", "ZombieTierraMinero" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "EJEMPLO/Factory_Method/ZombieTierraMinero.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AZombieTierraMinero_Statics::NewProp_ZombieMeshMinero = { "ZombieMeshMinero", nullptr, (EPropertyFlags)0x0020080000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AZombieTierraMinero, ZombieMeshMinero), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AZombieTierraMinero_Statics::NewProp_ZombieMeshMinero_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AZombieTierraMinero_Statics::NewProp_ZombieMeshMinero_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AZombieTierraMinero_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AZombieTierraMinero_Statics::NewProp_ZombieMeshMinero,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AZombieTierraMinero_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AZombieTierraMinero>::IsAbstract,
 	};
@@ -54,11 +71,11 @@ void EmptyLinkFunctionForGeneratedCodeZombieTierraMinero() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_AZombieTierraMinero_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AZombieTierraMinero_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AZombieTierraMinero_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AZombieTierraMinero_Statics::Class_MetaDataParams))
@@ -72,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeZombieTierraMinero() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AZombieTierraMinero, 1593613260);
+	IMPLEMENT_CLASS(AZombieTierraMinero, 928880139);
 	template<> PVZ_USFX_LAB_01_AV_API UClass* StaticClass<AZombieTierraMinero>()
 	{
 		return AZombieTierraMinero::StaticClass();

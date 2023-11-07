@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeZombieAguaBuzo() {}
 	PVZ_USFX_LAB_01_AV_API UClass* Z_Construct_UClass_AZombieAguaBuzo();
 	PVZ_USFX_LAB_01_AV_API UClass* Z_Construct_UClass_AZombies();
 	UPackage* Z_Construct_UPackage__Script_PVZ_USFX_LAB_01_AV();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 // End Cross Module References
 	void AZombieAguaBuzo::StaticRegisterNativesAZombieAguaBuzo()
 	{
@@ -31,6 +32,11 @@ void EmptyLinkFunctionForGeneratedCodeZombieAguaBuzo() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ZombieMeshBuzo_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ZombieMeshBuzo;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -45,6 +51,17 @@ void EmptyLinkFunctionForGeneratedCodeZombieAguaBuzo() {}
 		{ "ModuleRelativePath", "EJEMPLO/Factory_Method/ZombieAguaBuzo.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AZombieAguaBuzo_Statics::NewProp_ZombieMeshBuzo_MetaData[] = {
+		{ "Category", "ZombieAguaBuzo" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "EJEMPLO/Factory_Method/ZombieAguaBuzo.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AZombieAguaBuzo_Statics::NewProp_ZombieMeshBuzo = { "ZombieMeshBuzo", nullptr, (EPropertyFlags)0x0020080000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AZombieAguaBuzo, ZombieMeshBuzo), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AZombieAguaBuzo_Statics::NewProp_ZombieMeshBuzo_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AZombieAguaBuzo_Statics::NewProp_ZombieMeshBuzo_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AZombieAguaBuzo_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AZombieAguaBuzo_Statics::NewProp_ZombieMeshBuzo,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AZombieAguaBuzo_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AZombieAguaBuzo>::IsAbstract,
 	};
@@ -54,11 +71,11 @@ void EmptyLinkFunctionForGeneratedCodeZombieAguaBuzo() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_AZombieAguaBuzo_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AZombieAguaBuzo_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AZombieAguaBuzo_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AZombieAguaBuzo_Statics::Class_MetaDataParams))
@@ -72,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeZombieAguaBuzo() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AZombieAguaBuzo, 692742628);
+	IMPLEMENT_CLASS(AZombieAguaBuzo, 1890976553);
 	template<> PVZ_USFX_LAB_01_AV_API UClass* StaticClass<AZombieAguaBuzo>()
 	{
 		return AZombieAguaBuzo::StaticClass();

@@ -1,7 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "PVZ_USFX_LAB_01_AVPawn.h"
-#include "PVZ_USFX_LAB_01_AVProjectile.h"
+//#include "PVZ_USFX_LAB_01_AVProjectile.h"
 #include "TimerManager.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Camera/CameraComponent.h"
@@ -174,7 +174,7 @@ void APVZ_USFX_LAB_01_AVPawn::FireShot(FVector FireDirection)
 			if (World != nullptr)
 			{
 				// spawn the projectile
-				World->SpawnActor<APVZ_USFX_LAB_01_AVProjectile>(SpawnLocation, FireRotation);
+				/*World->SpawnActor<APVZ_USFX_LAB_01_AVProjectile>(SpawnLocation, FireRotation);*/
 			}
 
 			bCanFire = false;

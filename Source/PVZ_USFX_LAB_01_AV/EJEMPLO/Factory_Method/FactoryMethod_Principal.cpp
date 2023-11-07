@@ -5,6 +5,10 @@
 #include "GeneradorZombiesAgua.h"
 #include "GeneradorZombiesTierra.h"
 
+#include "GeneradorPlantasCuerpoAtaque.h"
+#include "GeneradorPlantasRangoAtaque.h"
+
+
 // Sets default values
 AFactoryMethod_Principal::AFactoryMethod_Principal()
 {
@@ -19,7 +23,7 @@ void AFactoryMethod_Principal::BeginPlay()
 	Super::BeginPlay();
 	
 
-	//Crea los generadores de zombies
+	//--------------------------------Crea los generadores de zombies--------------------------
 	AGeneradorZombies* GeneradorZombiesAgua = GetWorld()->SpawnActor<AGeneradorZombiesAgua>(AGeneradorZombiesAgua::StaticClass());
 	AGeneradorZombies* GeneradorZombiesTierra = GetWorld()->SpawnActor<AGeneradorZombiesTierra>(AGeneradorZombiesTierra::StaticClass());
 
@@ -28,14 +32,51 @@ void AFactoryMethod_Principal::BeginPlay()
 
 
 	Zombie = GeneradorZombiesTierra->OrdenarZombies("TierraGlobo");
-	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
-
-	//Zombie = GeneradorZombiesTierra->OrdenarZombies("TierraMinero");
 	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
 
-	//Zombie = GeneradorZombiesAgua->OrdenarZombies("AguaBuzo");
+	Zombie = GeneradorZombiesTierra->OrdenarZombies("TierraMinero");
 	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
 
+	Zombie = GeneradorZombiesTierra->OrdenarZombies("TierraSaltarin");
+	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
+
+	Zombie = GeneradorZombiesAgua->OrdenarZombies("AguaDelfin");
+	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
+
+	Zombie = GeneradorZombiesAgua->OrdenarZombies("AguaFlotante");
+	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
+
+	Zombie = GeneradorZombiesAgua->OrdenarZombies("AguaBuzo");
+	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
+	//--------------------------------Crea los generadores de zombies--------------------------
+	
+
+
+	//--------------------------------Crea los generadores de plantas--------------------------
+
+	AGeneradorPlantas* GeneradorPlantasCuerpoAtaque = GetWorld()->SpawnActor<AGeneradorPlantasCuerpoAtaque>(AGeneradorPlantasCuerpoAtaque::StaticClass());
+	AGeneradorPlantas* GeneradorPlantasRangoAtaque = GetWorld()->SpawnActor<AGeneradorPlantasRangoAtaque>(AGeneradorPlantasRangoAtaque::StaticClass());
+
+	//Create an Outer Health Potion and log its name
+	APlantas* Planta;
+
+
+	Planta = GeneradorPlantasRangoAtaque->OrdenarPlantas("HieloGuisantes");
+	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
+
+	Planta = GeneradorPlantasRangoAtaque->OrdenarPlantas("Lanzaguisante");
+	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
+
+	Planta = GeneradorPlantasRangoAtaque->OrdenarPlantas("Repetidoras");
+	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
+
+	Planta = GeneradorPlantasCuerpoAtaque->OrdenarPlantas("Carnibora");
+	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
+
+	Planta = GeneradorPlantasCuerpoAtaque->OrdenarPlantas("Hipnoseta");
+	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
+
+	Planta = GeneradorPlantasCuerpoAtaque->OrdenarPlantas("Patatapum");
 
 
 

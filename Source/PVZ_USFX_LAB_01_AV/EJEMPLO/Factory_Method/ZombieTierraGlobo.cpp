@@ -5,28 +5,45 @@
 
 
 
-void AZombieTierraGlobo::BeginPlay()
+AZombieTierraGlobo::AZombieTierraGlobo()
 {
-	//Cambias los atributos según lo que quieras
+
+	NombreZombie = "TierraGoblo";
 
 
-	//Define sus atributos
-	NombreZombie = "Zombie de Tierra en globo";
-	Vida = FMath::FRandRange(100, 150);
-	Armadura = "Igual que la vida";
-	//Añade los materiales (opcional)
-	Materiales.Add("Un globo, un inflador");
+
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ZombieMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Tube.Shape_Tube'"));
+	//static ConstructorHelpers::FObjectFinder<UStaticMesh> ZombieMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
+
+	ZombieMeshGlobo = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ZombieMeshGlobo"));
+	ZombieMeshGlobo->SetStaticMesh(ZombieMesh.Object);
+	ZombieMeshGlobo->SetCollisionProfileName(UCollisionProfile::BlockAll_ProfileName);
+	ZombieMeshGlobo->SetSimulatePhysics(true);
+	//ZombieMeshComponent->OnComponentBeginOverlap.AddDynamic(this, &AZombiess::OnOverlapBeginFunction);		// set up a notification for when this component hits something
+
+	RootComponent = ZombieMeshGlobo;
+
+	// va a morir de 2 disparos
+	Vida = 40;
+}
+
+
+
+void AZombieTierraGlobo::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)
+{
+
+	this->Destroy();
 
 }
 
-void AZombieTierraGlobo::Elaboracion()
-{
-
-	//Mensaje del tipo de elaboracion
-	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, TEXT("Elaborando zombie en globo"));
-
-	//Añade codigo que quieras que haga el zombie
-
-
-
-}
+//void AZombieTierraGlobo::Elaboracion()
+//{
+//
+//	//Mensaje del tipo de elaboracion
+//	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, TEXT("Elaborando zombie en globo"));
+//
+//	//Añade codigo que quieras que haga el zombie
+//
+//
+//
+//}

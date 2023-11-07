@@ -58,7 +58,11 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AZombies)
 
 
-#define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_EJEMPLO_Factory_Method_Zombies_h_12_PRIVATE_PROPERTY_OFFSET
+#define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_EJEMPLO_Factory_Method_Zombies_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__ZombieMeshComponent() { return STRUCT_OFFSET(AZombies, ZombieMeshComponent); } \
+	FORCEINLINE static uint32 __PPO__ZombieBoxComponent() { return STRUCT_OFFSET(AZombies, ZombieBoxComponent); }
+
+
 #define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_EJEMPLO_Factory_Method_Zombies_h_9_PROLOG
 #define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_EJEMPLO_Factory_Method_Zombies_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

@@ -25,3 +25,7 @@ void AEnemigoCualquiera::Tick(float DeltaTime)
 
 }
 
+//void AEnemigoCualquiera::Pelear()
+//{
+//	UE_LOG(LogTemp, Warning, TEXT("Pelear"));
+//}

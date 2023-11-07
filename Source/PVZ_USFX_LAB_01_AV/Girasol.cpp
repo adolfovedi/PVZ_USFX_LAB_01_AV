@@ -15,7 +15,7 @@ AGirasol::AGirasol()
 
 
 	PlantMeshComponent->SetRelativeScale3D(FVector(3, 1, 3));
-	energia = 150;
+	//energia = 150;
 
 }
 

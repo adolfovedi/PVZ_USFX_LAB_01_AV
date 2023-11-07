@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Enemigo.h"
 #include "Decorator_Principal.generated.h"
 
 UCLASS()
@@ -14,6 +15,10 @@ class PVZ_USFX_LAB_01_AV_API ADecorator_Principal : public AActor
 public:	
 	// Sets default values for this actor's properties
 	ADecorator_Principal();
+
+public:
+	//The main Enemy Actor
+	IEnemigo* Enemigo;
 
 protected:
 	// Called when the game starts or when spawned

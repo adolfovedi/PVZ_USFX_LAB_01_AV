@@ -2,26 +2,35 @@
 
 
 #include "ZombieAguaBuzo.h"
+#include "Components/StaticMeshComponent.h"
 
-void AZombieAguaBuzo::BeginPlay()
+AZombieAguaBuzo::AZombieAguaBuzo()
 {
-	//Cambias los atributos según lo que quieras
 
+	NombreZombie = "AguaBuzo";
 
-	//Define sus atributos
-	NombreZombie = "Zombie de Agua Buzo";
-	Vida = 200;
-	Armadura = "Sin armadura";
-	//Añade los materiales (opcional)
-	Materiales.Add("Un Respirador");
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ZombieMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
+	//static ConstructorHelpers::FObjectFinder<UStaticMesh> ZombieMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
 
+	ZombieMeshBuzo = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ZombieMeshBuzo"));
+	ZombieMeshBuzo->SetStaticMesh(ZombieMesh.Object);
+	ZombieMeshBuzo->SetCollisionProfileName(UCollisionProfile::BlockAll_ProfileName);
+	ZombieMeshBuzo->SetSimulatePhysics(true);
+	//ZombieMeshComponent->OnComponentBeginOverlap.AddDynamic(this, &AZombiess::OnOverlapBeginFunction);		// set up a notification for when this component hits something
+
+	RootComponent = ZombieMeshBuzo;
+
+	// va a morir despues de 3 disparos
+	Vida = 60;
 }
 
-void AZombieAguaBuzo::Elaboracion()
-{
-	//Mensaje del tipo de elaboracion
-	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, TEXT("Elaborando zombie Buzo"));
 
-	//Añade codigo que quieras que haga el zombie
 
-}
+//void AZombieAguaBuzo::Elaboracion()
+//{
+//	//Mensaje del tipo de elaboracion
+//	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, TEXT("Elaborando zombie Buzo"));
+//
+//	//Añade codigo que quieras que haga el zombie
+//
+//}

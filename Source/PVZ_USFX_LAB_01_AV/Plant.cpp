@@ -2,15 +2,15 @@
 
 
 #include "Plant.h"
-#include "PVZ_USFX_LAB_01_AVProjectile.h"
+#include "Ejemplo/Factory_Method/PVZ_USFX_LAB_01_AVProjectile.h"
 #include "Zombie.h"
 //#include "PVZ_USFX_LAB02GameModeBase.h"
-//#include "UObject/ConstructorHelpers.h"
-//#include "Components/StaticMeshComponent.h"
-//#include "Components/BoxComponent.h"
+#include "UObject/ConstructorHelpers.h"
+#include "Components/StaticMeshComponent.h"
+#include "Components/BoxComponent.h"
 
 // Sets default values
-//
+
 int32 APlant::TotalProyectilesDisparados = 0;
 
 APlant::APlant()
@@ -33,7 +33,7 @@ APlant::APlant()
 	energia = 25;
 	bCanFire = true;
 	GunOffset = FVector(90.f, 0.f, 0.f);
-	FireRate = 0.2f;
+	FireRate = 1.0f;
 	TiempoTranscurrido = 0.0f;
 	TiempoEntreDisparos = 1.0f;
 	Tags.Add(TEXT("Plant"));
@@ -70,7 +70,7 @@ void APlant::BeginPlay()
 
 }
 
-// Called every frame
+ /*Called every frame*/
 void APlant::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
@@ -128,6 +128,8 @@ void APlant::FireShot(FVector FireDirection)
 	}
 }
 //--------------------------------------------------
+
+
 void APlant::ShotTimerExpired()
 {
 	bCanFire = true;

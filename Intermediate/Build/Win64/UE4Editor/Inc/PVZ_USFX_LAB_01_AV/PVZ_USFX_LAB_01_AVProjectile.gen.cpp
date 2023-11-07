@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "PVZ_USFX_LAB_01_AV/PVZ_USFX_LAB_01_AVProjectile.h"
+#include "PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/PVZ_USFX_LAB_01_AVProjectile.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -104,7 +104,7 @@ void EmptyLinkFunctionForGeneratedCodePVZ_USFX_LAB_01_AVProjectile() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APVZ_USFX_LAB_01_AVProjectile_OnHit_Statics::Function_MetaDataParams[] = {
 		{ "Comment", "/** Function to handle the projectile hitting something */" },
-		{ "ModuleRelativePath", "PVZ_USFX_LAB_01_AVProjectile.h" },
+		{ "ModuleRelativePath", "EJEMPLO/Factory_Method/PVZ_USFX_LAB_01_AVProjectile.h" },
 		{ "ToolTip", "Function to handle the projectile hitting something" },
 	};
 #endif
@@ -150,12 +150,12 @@ void EmptyLinkFunctionForGeneratedCodePVZ_USFX_LAB_01_AVProjectile() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_PVZ_USFX_LAB_01_AV,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_APVZ_USFX_LAB_01_AVProjectile_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_APVZ_USFX_LAB_01_AVProjectile_OnHit, "OnHit" }, // 2720118845
+		{ &Z_Construct_UFunction_APVZ_USFX_LAB_01_AVProjectile_OnHit, "OnHit" }, // 2519647285
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APVZ_USFX_LAB_01_AVProjectile_Statics::Class_MetaDataParams[] = {
-		{ "IncludePath", "PVZ_USFX_LAB_01_AVProjectile.h" },
-		{ "ModuleRelativePath", "PVZ_USFX_LAB_01_AVProjectile.h" },
+		{ "IncludePath", "EJEMPLO/Factory_Method/PVZ_USFX_LAB_01_AVProjectile.h" },
+		{ "ModuleRelativePath", "EJEMPLO/Factory_Method/PVZ_USFX_LAB_01_AVProjectile.h" },
 	};
 #endif
 #if WITH_METADATA
@@ -164,7 +164,7 @@ void EmptyLinkFunctionForGeneratedCodePVZ_USFX_LAB_01_AVProjectile() {}
 		{ "Category", "Projectile" },
 		{ "Comment", "/** Sphere collision component */" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "PVZ_USFX_LAB_01_AVProjectile.h" },
+		{ "ModuleRelativePath", "EJEMPLO/Factory_Method/PVZ_USFX_LAB_01_AVProjectile.h" },
 		{ "ToolTip", "Sphere collision component" },
 	};
 #endif
@@ -175,7 +175,7 @@ void EmptyLinkFunctionForGeneratedCodePVZ_USFX_LAB_01_AVProjectile() {}
 		{ "Category", "Movement" },
 		{ "Comment", "/** Projectile movement component */" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "PVZ_USFX_LAB_01_AVProjectile.h" },
+		{ "ModuleRelativePath", "EJEMPLO/Factory_Method/PVZ_USFX_LAB_01_AVProjectile.h" },
 		{ "ToolTip", "Projectile movement component" },
 	};
 #endif
@@ -184,7 +184,7 @@ void EmptyLinkFunctionForGeneratedCodePVZ_USFX_LAB_01_AVProjectile() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APVZ_USFX_LAB_01_AVProjectile_Statics::NewProp_MeshBala_MetaData[] = {
 		{ "Category", "PVZ_USFX_LAB_01_AVProjectile" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "PVZ_USFX_LAB_01_AVProjectile.h" },
+		{ "ModuleRelativePath", "EJEMPLO/Factory_Method/PVZ_USFX_LAB_01_AVProjectile.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APVZ_USFX_LAB_01_AVProjectile_Statics::NewProp_MeshBala = { "MeshBala", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APVZ_USFX_LAB_01_AVProjectile, MeshBala), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APVZ_USFX_LAB_01_AVProjectile_Statics::NewProp_MeshBala_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APVZ_USFX_LAB_01_AVProjectile_Statics::NewProp_MeshBala_MetaData)) };
@@ -220,7 +220,7 @@ void EmptyLinkFunctionForGeneratedCodePVZ_USFX_LAB_01_AVProjectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APVZ_USFX_LAB_01_AVProjectile, 3330188733);
+	IMPLEMENT_CLASS(APVZ_USFX_LAB_01_AVProjectile, 2826566397);
 	template<> PVZ_USFX_LAB_01_AV_API UClass* StaticClass<APVZ_USFX_LAB_01_AVProjectile>()
 	{
 		return APVZ_USFX_LAB_01_AVProjectile::StaticClass();

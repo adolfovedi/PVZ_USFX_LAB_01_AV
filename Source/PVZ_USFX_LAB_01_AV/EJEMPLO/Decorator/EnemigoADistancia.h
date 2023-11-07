@@ -14,4 +14,15 @@ class PVZ_USFX_LAB_01_AV_API AEnemigoADistancia : public ADecoratorPlantas
 {
 	GENERATED_BODY()
 	
+
+public:
+	////Start Fighting
+	//virtual void Pelear() override;
+	////Returns how much damage this enemy has taken
+	//virtual int GetDano() override;
+	////Kill this enemy
+	//virtual void Morir() override;
+
+
+
 };

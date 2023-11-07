@@ -36,7 +36,7 @@ public: \
 
 #define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_EJEMPLO_Factory_Method_ZombieAguaBuzo_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AZombieAguaBuzo(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API AZombieAguaBuzo(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AZombieAguaBuzo) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AZombieAguaBuzo); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AZombieAguaBuzo); \
@@ -48,8 +48,6 @@ public:
 
 
 #define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_EJEMPLO_Factory_Method_ZombieAguaBuzo_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AZombieAguaBuzo() { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AZombieAguaBuzo(AZombieAguaBuzo&&); \
@@ -60,7 +58,10 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AZombieAguaBuzo)
 
 
-#define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_EJEMPLO_Factory_Method_ZombieAguaBuzo_h_15_PRIVATE_PROPERTY_OFFSET
+#define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_EJEMPLO_Factory_Method_ZombieAguaBuzo_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__ZombieMeshBuzo() { return STRUCT_OFFSET(AZombieAguaBuzo, ZombieMeshBuzo); }
+
+
 #define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_EJEMPLO_Factory_Method_ZombieAguaBuzo_h_12_PROLOG
 #define PVZ_USFX_LAB_01_AV_Source_PVZ_USFX_LAB_01_AV_EJEMPLO_Factory_Method_ZombieAguaBuzo_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

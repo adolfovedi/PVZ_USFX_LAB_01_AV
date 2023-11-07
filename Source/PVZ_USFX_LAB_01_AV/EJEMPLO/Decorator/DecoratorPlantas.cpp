@@ -25,3 +25,17 @@ void ADecoratorPlantas::Tick(float DeltaTime)
 
 }
 
+//void ADecoratorPlantas::Pelear()
+//{
+//	this->Enemigo->Pelear();
+//}
+//
+//int ADecoratorPlantas::GetDano()
+//{
+//	return this->Enemigo->GetDano();
+//}
+//
+//void ADecoratorPlantas::Morir()
+//{
+//	this->Enemigo->Morir();
+//}

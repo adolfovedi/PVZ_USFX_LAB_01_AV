@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Enemigo.h"
 #include "DecoratorPlantas.generated.h"
 
 UCLASS()
@@ -22,5 +23,18 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+private:
+	IEnemigo* Enemigo;
+public:
+
+	/*virtual void Pelear() override;
+	virtual int GetDano() override;
+	virtual void Morir() override;*/
+
+
+	void DefinirEnemigo(IEnemigo* _Enemigo) { Enemigo = _Enemigo; }
+	IEnemigo* GetEnemigo() { return Enemigo; }
+
 
 };
