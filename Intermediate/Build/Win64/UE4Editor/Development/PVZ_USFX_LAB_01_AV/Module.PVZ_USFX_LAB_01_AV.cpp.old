@@ -3,7 +3,6 @@
 #include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/ActorJerarquico.cpp"
 #include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/Controlador.cpp"
 #include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/CustomSceneComponent.cpp"
-#include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/Girasol.cpp"
 #include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/GridaManager.cpp"
 #include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/Grilla.cpp"
 #include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/Grilla_Agua.cpp"
