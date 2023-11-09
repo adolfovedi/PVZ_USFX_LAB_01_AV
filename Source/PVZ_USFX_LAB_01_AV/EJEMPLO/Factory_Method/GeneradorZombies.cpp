@@ -29,14 +29,6 @@ AZombies* AGeneradorZombies::OrdenarZombies(FString Tipo)
 
 	//Crea el zombie y muestra su nombre en pantalla
 	AZombies* Zombie = ArmarZombies(Tipo);
-	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Elaborando %s"), *Zombie->GetNombreZombie()));
-	//Inicia el proceso de elaboracion
-
-
-	/*Zombie->Armar();
-	Zombie->Elaboracion();
-	Zombie->Liberar();*/
-
-	//Returns the created potion
+	
 	return Zombie;
 }

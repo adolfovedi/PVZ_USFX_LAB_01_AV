@@ -25,9 +25,9 @@ void AGeneradorPlantas::Tick(float DeltaTime)
 
 }
 
-APlantas* AGeneradorPlantas::OrdenarPlantas(FString Tipo)
+APlantas* AGeneradorPlantas::OrdenarPlantas(FString Tipo, FVector Location)
 {
-	APlantas* Plantas = ArmarPlantas(Tipo);
+	APlantas* Plantas = ArmarPlantas(Tipo, Location);
 	
 	return Plantas;
 }

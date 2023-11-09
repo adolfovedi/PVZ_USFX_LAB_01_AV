@@ -16,7 +16,7 @@ class PVZ_USFX_LAB_01_AV_API AGeneradorPlantasRangoAtaque : public AGeneradorPla
 	
 public:
 	//Concoct the selected potion
-	virtual APlantas* ArmarPlantas(FString PlantasSKU) override;
+	virtual APlantas* ArmarPlantas(FString PlantasSKU, FVector Location) override;
 
 
 };

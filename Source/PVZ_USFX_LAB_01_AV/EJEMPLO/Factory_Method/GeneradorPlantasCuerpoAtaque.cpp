@@ -6,24 +6,25 @@
 #include "PlantasHipnoseta.h"
 #include "PlantasPatatapum.h"
 
-APlantas* AGeneradorPlantasCuerpoAtaque::ArmarPlantas(FString PlantasSKU)
+APlantas* AGeneradorPlantasCuerpoAtaque::ArmarPlantas(FString PlantasSKU, FVector Location)
 {
 
 	//Selecciona el tipo de zombie a crear basado en su ZombiesSKU (string)
 	if (PlantasSKU.Equals("Carnibora")) {
-		return GetWorld()->SpawnActor<APlantasCarnibora>(APlantasCarnibora::StaticClass(), FVector(-1500.0f, 0.0f, 250.0f), FRotator::ZeroRotator);
+		return GetWorld()->SpawnActor<APlantasCarnibora>(APlantasCarnibora::StaticClass(), Location, FRotator::ZeroRotator);
 		
 	}
 
 	if (PlantasSKU.Equals("Hipnoseta")) {
-		return GetWorld()->SpawnActor<APlantasHipnoseta>(APlantasHipnoseta::StaticClass(), FVector(-1300.0f, 0.0f, 200.0f), FRotator::ZeroRotator);
+		return GetWorld()->SpawnActor<APlantasHipnoseta>(APlantasHipnoseta::StaticClass(), Location, FRotator::ZeroRotator);
 		
 	}
 
 	if (PlantasSKU.Equals("Patatapum")) {
-		return GetWorld()->SpawnActor<APlantasPatatapum>(APlantasPatatapum::StaticClass(), FVector(-1100.0f, 0.0f, 200.0f), FRotator::ZeroRotator);
+		return GetWorld()->SpawnActor<APlantasPatatapum>(APlantasPatatapum::StaticClass(), Location, FRotator::ZeroRotator);
 	
 	}
+
 
 
 	else return nullptr; //Returna null si el valor no es valido

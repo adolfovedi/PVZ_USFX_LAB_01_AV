@@ -25,9 +25,9 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	// Crea un zombie y lo devuelve.es una funciona virtual pura así que no necesita implementacion
-    virtual APlantas* ArmarPlantas(FString PlantasSKU) PURE_VIRTUAL(AGeneradorPlantas::ArmarPlantas, return nullptr;);
+    virtual APlantas* ArmarPlantas(FString PlantasSKU,FVector Location) PURE_VIRTUAL(AGeneradorPlantas::ArmarPlantas, return nullptr;);
 
 	//Ordena, arma y devuelve un zombie
-	APlantas* OrdenarPlantas(FString Tipo);
+	APlantas* OrdenarPlantas(FString Tipo, FVector Location);
 
 };

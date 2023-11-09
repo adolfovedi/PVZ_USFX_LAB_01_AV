@@ -14,8 +14,9 @@ class PVZ_USFX_LAB_01_AV_API AGeneradorPlantasCuerpoAtaque : public AGeneradorPl
 {
 	GENERATED_BODY()
 public:
+
 	//Concoct the selected potion
-	virtual APlantas* ArmarPlantas(FString PlantasSKU) override;
+	virtual APlantas* ArmarPlantas(FString PlantasSKU, FVector Location) override;
 
 
 

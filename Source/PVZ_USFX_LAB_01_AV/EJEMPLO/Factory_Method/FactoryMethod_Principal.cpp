@@ -60,27 +60,29 @@ void AFactoryMethod_Principal::BeginPlay()
 	//Create an Outer Health Potion and log its name
 	APlantas* Planta;
 
+	//--------------------------------Crea los generadores de plantasRangoAtaque--------------------------
 
-	Planta = GeneradorPlantasRangoAtaque->OrdenarPlantas("HieloGuisantes");
+	Planta = GeneradorPlantasRangoAtaque->OrdenarPlantas("HieloGuisantes", FVector(-900.0f, 0.0f, 200.0f));
 	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
 
-	Planta = GeneradorPlantasRangoAtaque->OrdenarPlantas("Lanzaguisante");
+	Planta = GeneradorPlantasRangoAtaque->OrdenarPlantas("Lanzaguisante", FVector(-700.0f, 0.0f, 200.0f));
 	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
 
-	Planta = GeneradorPlantasRangoAtaque->OrdenarPlantas("Repetidoras");
+	Planta = GeneradorPlantasRangoAtaque->OrdenarPlantas("Repetidoras", FVector(-500.0f, 0.0f, 200.0f));
 	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
 
-	Planta = GeneradorPlantasCuerpoAtaque->OrdenarPlantas("Carnibora");
+	//--------------------------------Crea los generadores de plantasCuerpoAtaque--------------------------
+	Planta = GeneradorPlantasCuerpoAtaque->OrdenarPlantas("Carnibora", FVector(-1500.0f, 0.0f, 250.0f));
 	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
 
-	Planta = GeneradorPlantasCuerpoAtaque->OrdenarPlantas("Hipnoseta");
+	Planta = GeneradorPlantasCuerpoAtaque->OrdenarPlantas("Hipnoseta", FVector(-1300.0f, 0.0f, 250.0f));
 	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
 
-	Planta = GeneradorPlantasCuerpoAtaque->OrdenarPlantas("Patatapum");
+	Planta = GeneradorPlantasCuerpoAtaque->OrdenarPlantas("Patatapum", FVector(-1100.0f, 0.0f, 250.0f));
 
+	Planta = GeneradorPlantasCuerpoAtaque->OrdenarPlantas("Patatapum", FVector(-1100.0f, 160.0f, 250.0f));
 
-
-
+	Planta = GeneradorPlantasRangoAtaque->OrdenarPlantas("Repetidoras", FVector(-300.0f, 0.0f, 250.0f));
 }
 
 // Called every frame

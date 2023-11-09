@@ -31,42 +31,13 @@ C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Decorator/Enemig
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Decorator/EnemigoADistancia.cpp
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Decorator/EnemigoCualquiera.cpp
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Decorator/EnemigoCuerpoACuerpo.cpp
-C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/FactoryMethod_Principal.cpp
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\FactoryMethod_Principal.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\FactoryMethod_Principal.generated.h
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/GeneradorZombiesAgua.cpp
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\GeneradorZombiesAgua.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\GeneradorZombies.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\Zombies.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Zombies.generated.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\GeneradorZombies.generated.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\GeneradorZombiesAgua.generated.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\GeneradorZombiesTierra.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\GeneradorZombiesTierra.generated.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\GeneradorPlantasCuerpoAtaque.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\GeneradorPlantas.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\Plantas.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Plantas.generated.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\GeneradorPlantas.generated.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\GeneradorPlantasCuerpoAtaque.generated.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\GeneradorPlantasRangoAtaque.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\GeneradorPlantasRangoAtaque.generated.h
-C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/GeneradorPlantas.cpp
-C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/GeneradorPlantasCuerpoAtaque.cpp
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\PlantasCarnibora.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\PlantasCarnibora.generated.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\PlantasHipnoseta.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\PlantasHipnoseta.generated.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\PlantasPatatapum.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\PlantasPatatapum.generated.h
-C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/GeneradorPlantasRangoAtaque.cpp
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\PlantasHieloGuisantes.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\PlantasHieloGuisantes.generated.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\PlantasLanzaguisante.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\PlantasLanzaguisante.generated.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\PlantasRepetidoras.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\PlantasRepetidoras.generated.h
-C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/GeneradorZombies.cpp
-C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/GeneradorZombiesAgua.cpp
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\ZombieAguaBuzo.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\ZombieAguaBuzo.generated.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\ZombieAguaDelfin.h
@@ -74,6 +45,8 @@ C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LA
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\ZombieAguaFlotante.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\ZombieAguaFlotante.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/GeneradorZombiesTierra.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\GeneradorZombiesTierra.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\GeneradorZombiesTierra.generated.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\ZombieTierraGlobo.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\ZombieTierraGlobo.generated.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\ZombieTierraMinero.h
@@ -81,6 +54,8 @@ C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LA
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\ZombieTierraSaltarin.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\ZombieTierraSaltarin.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/Plantas.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\Plantas.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Plantas.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
@@ -94,11 +69,23 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\PVZ_USFX_LAB_01_AVProjectile.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/PlantasCarnibora.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\PlantasCarnibora.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\PlantasCarnibora.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/PlantasHieloGuisantes.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\PlantasHieloGuisantes.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\PlantasHieloGuisantes.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/PlantasHipnoseta.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\PlantasHipnoseta.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\PlantasHipnoseta.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/PlantasLanzaguisante.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\PlantasLanzaguisante.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\PlantasLanzaguisante.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/PlantasPatatapum.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\PlantasPatatapum.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\PlantasPatatapum.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/PlantasRepetidoras.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\PlantasRepetidoras.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\PlantasRepetidoras.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/PlayerControllerCamera.cpp
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\PlayerControllerCamera.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\PlayerControllerCamera.generated.h
@@ -893,6 +880,8 @@ C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LA
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\Repetidora.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Repetidora.generated.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\Planta_Ataque.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\Ejemplo/Factory_Method/FactoryMethod_Principal.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\FactoryMethod_Principal.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/PVZ_USFX_LAB_01_AVPawn.cpp
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/PVZ_USFX_LAB_0Q1_AVGameStateBase.cpp
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\PVZ_USFX_LAB_0Q1_AVGameStateBase.h
