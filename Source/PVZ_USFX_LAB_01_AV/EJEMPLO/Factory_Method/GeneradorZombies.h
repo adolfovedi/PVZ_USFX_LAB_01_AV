@@ -25,9 +25,9 @@ public:
 
 
 	//Crea un zombie y lo devuelve. es una funciona virtual pura así que no necesita implementacion
-	virtual AZombies* ArmarZombies(FString ZombiesSKU)
+	virtual AZombies* ArmarZombies(FString ZombiesSKU, FVector Location)
 		PURE_VIRTUAL(AGeneradorZombies::ArmarZombies, return nullptr;);
 
 	//Ordena, arma y devuelve un zombie
-	AZombies* OrdenarZombies(FString Tipo);
+	AZombies* OrdenarZombies(FString Tipo,FVector Location);
 };

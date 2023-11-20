@@ -107,8 +107,8 @@ void APlantas::DispararPlantas(FVector FireDirection)
 			// 
 			//-------------------------------------------------------------------
 		
-			bCanFire = false;
-			World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, this, &APlantas::ShotTimerExpired, FireRate);
+			/*bCanFire = false;
+			World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, this, &APlantas::ShotTimerExpired, FireRate);*/
 			//----------------------------------------------------------------------
 		}
 	}

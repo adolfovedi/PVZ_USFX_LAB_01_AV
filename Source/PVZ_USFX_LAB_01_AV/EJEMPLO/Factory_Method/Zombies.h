@@ -4,8 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "PVZ_USFX_LAB_01_AV/EJEMPLO/Estrategy/Estrategias.h"
 #include "Zombies.generated.h"
-
 UCLASS()
 class PVZ_USFX_LAB_01_AV_API AZombies : public AActor
 {
@@ -24,11 +24,16 @@ protected:
 	FVector DireccionBrickBoss;
 	float MovingX;
 	
+private:
+	//The current Battle Strategy
+	IEstrategias* Estrategias;
 
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	void SetVida(float _Vida);
+	float GetVida();
 
 protected:
 	//Nombre del Zombie
@@ -41,14 +46,14 @@ protected:
 	class UBoxComponent* ZombieBoxComponent;
 
 
-	
+	int Vida;
 
 	void MorirZombie();
 
 	 
 	//"Vida" del Zombie
 
-	int Vida;
+
 
 
 	//// "Armadura" del Zombie
@@ -75,5 +80,8 @@ public:
 		FVector NormalImpulse, const FHitResult& Hit)override;//esta funcion nos notifica cada golpe que de la clase.
 
 	void SetMovingX(float _MovingX);
-
+	// Change the Maneuver and set "BattleStrategy" variable
+	void AniadirManiobres(AActor* myEstrategias);
+	// Engage with the current Battle Strategy
+	void RealiazarManiobres(AActor* Planta);
 };

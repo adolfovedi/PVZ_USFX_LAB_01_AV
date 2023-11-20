@@ -5,23 +5,28 @@
 #include "ZombieTierraGlobo.h"
 #include "ZombieTierraMinero.h"
 #include "ZombieTierraSaltarin.h"
+#include "ZombieTierraMichaelJackson.h"
 
 
-AZombies* AGeneradorZombiesTierra::ArmarZombies(FString ZombiesSKU)
+AZombies* AGeneradorZombiesTierra::ArmarZombies(FString ZombiesSKU, FVector Location)
 {
-	FVector Location(-900.0f, 800.0f, 200.0f);
+	
 	//Selecciona el tipo de zombie a crear basado en su ZombiesSKU (string)
 	if (ZombiesSKU.Equals("TierraGlobo")) {
-		return GetWorld()->SpawnActor<AZombieTierraGlobo>(AZombieTierraGlobo::StaticClass(), FVector(-900.0f,800.0f,200.0f), FRotator::ZeroRotator);
-		Location = Location + FVector(200.0f, 0.0f, 0.0f);
+		return GetWorld()->SpawnActor<AZombieTierraGlobo>(AZombieTierraGlobo::StaticClass(), Location, FRotator::ZeroRotator);
+		
 	}
 	else if (ZombiesSKU.Equals("TierraMinero")) {
-		return GetWorld()->SpawnActor<AZombieTierraMinero>(AZombieTierraMinero::StaticClass(), FVector(-700.0f, 800.0f, 200.0f), FRotator::ZeroRotator);
-		Location = Location + FVector(200.0f, 0.0f, 0.0f);
+		return GetWorld()->SpawnActor<AZombieTierraMinero>(AZombieTierraMinero::StaticClass(), Location, FRotator::ZeroRotator);
+		
 	}
 	else if (ZombiesSKU.Equals("TierraSaltarin")) {
-		return GetWorld()->SpawnActor<AZombieTierraSaltarin>(AZombieTierraSaltarin::StaticClass(), FVector(-500.0f, 800.0f, 200.0f), FRotator::ZeroRotator);
-		Location = Location + FVector(200.0f, 0.0f, 0.0f);
+		return GetWorld()->SpawnActor<AZombieTierraSaltarin>(AZombieTierraSaltarin::StaticClass(), Location, FRotator::ZeroRotator);
+	
+	}
+	else if (ZombiesSKU.Equals("MichaelJackson")) {
+		return GetWorld()->SpawnActor<AZombieTierraMichaelJackson>(AZombieTierraMichaelJackson::StaticClass(), Location, FRotator::ZeroRotator);
+
 	}
 
 	else return nullptr; //Returna null si el valor no es valido

@@ -24,11 +24,11 @@ void AGeneradorZombies::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
-AZombies* AGeneradorZombies::OrdenarZombies(FString Tipo)
+AZombies* AGeneradorZombies::OrdenarZombies(FString Tipo, FVector Location)
 {
 
 	//Crea el zombie y muestra su nombre en pantalla
-	AZombies* Zombie = ArmarZombies(Tipo);
+	AZombies* Zombie = ArmarZombies(Tipo,  Location);
 	
 	return Zombie;
 }

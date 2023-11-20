@@ -33,13 +33,13 @@ AZombies::AZombies()
 	/*ZombieBoxComponent->SetBoxExtent(FVector(100.0f, 100.0f, 100.0f));*/
 	ZombieBoxComponent->SetHiddenInGame(false);
 
-
+	//-----------------colisiones-------------------
 	ZombieMeshComponent->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 	ZombieBoxComponent->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 
 	
-
-	VelocityBrickBoss = 10.0f;
+	//-------------velocidad de movimiento del zombie
+	VelocityBrickBoss = 5.0f;
 	MovingX = -10;
 	
 	//cada disparo va a quitar 20 de vida
@@ -76,12 +76,22 @@ void AZombies::Tick(float DeltaTime)
 
 }
 
+void AZombies::SetVida(float _Vida)
+{
+	Vida = _Vida;
+}
+
+float AZombies::GetVida()
+{
+	return Vida;
+}
+
 void AZombies::MorirZombie()
 {
 
 	this->Destroy();
 
-
+	//Estrategias->Destroy();
 
 }
 //void AZombies::Armar()
@@ -127,6 +137,30 @@ void AZombies::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveC
 	}
 	
 
+}
+
+void AZombies::AniadirManiobres(AActor* myEstrategias)
+{
+	//Try to cast the passed Strategy and set it to the current one
+	Estrategias = Cast<IEstrategias>(myEstrategias);
+	//Log Error if the cast failed
+	if (!Estrategias)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, TEXT("Invalid Cast! See Output log for more details"));
+		UE_LOG(LogTemp, Error, TEXT("AlterManeuvers(): The Actor is nota BattleShipStrategy!Are you sure that the Actor implements thatinterface ? "));
+	}
+
+}
+
+void AZombies::RealiazarManiobres(AActor* Planta)
+{
+
+	//Log Error if the current Strategy is NULL
+	if (!Estrategias) {
+		UE_LOG(LogTemp, Error, TEXT("Engage():Estrategias is NULL, make sure it's initialized.")); return;
+	}
+	//Execute the current Strategy Maneuver
+	Estrategias->EstrategiaPlantas(Planta);
 }
 
 

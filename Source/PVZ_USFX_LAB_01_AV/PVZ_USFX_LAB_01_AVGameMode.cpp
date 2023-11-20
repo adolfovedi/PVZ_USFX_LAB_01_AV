@@ -43,7 +43,11 @@
 //#include "Libro/Observer_Pattern/Observer_Main.h"
 //
 #include "Ejemplo/Factory_Method/FactoryMethod_Principal.h"
+#include "Ejemplo/Estrategy/Strategy_Principal.h"
 #include "Ejemplo/Decorator/Decorator_Principal.h"
+
+
+
 //#include "Ejemplo/Observer/Observer_Principal.h"
 //------------------------------------------------------------------
 
@@ -194,7 +198,11 @@ void APVZ_USFX_LAB_01_AVGameMode::BeginPlay()
 	//ASol* Sol1 = GetWorld()->SpawnActor<ASol>(ASol::StaticClass(), FVector(-400.0f, -50.0f, 160.0f), FRotator::ZeroRotator);
 	//ASol* Sol2 = GetWorld()->SpawnActor<ASol>(ASol::StaticClass(), FVector(-450, -50, 160), FRotator::ZeroRotator);
 	//
+
+
 	AFactoryMethod_Principal* FactoryMethod = GetWorld()->SpawnActor<AFactoryMethod_Principal>(AFactoryMethod_Principal::StaticClass());
+	//AStrategy_Principal* Estrategy = GetWorld()->SpawnActor<AStrategy_Principal>(AStrategy_Principal::StaticClass());
+
 
 	//FVector Location(-1500.0f, 0.0f, 200.0f); 
 	//for (int i = 0; i < 6; i++)
