@@ -10,8 +10,8 @@ UCLASS()
 class PVZ_USFX_LAB_01_AV_API AZombies : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	AZombies();
 
@@ -23,12 +23,12 @@ protected:
 	float VelocityBrickBoss;
 	FVector DireccionBrickBoss;
 	float MovingX;
-	
+
 private:
 	//The current Battle Strategy
 	IEstrategias* Estrategias;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
@@ -47,10 +47,10 @@ protected:
 
 
 	int Vida;
-
+	bool MoverZombie;
 	void MorirZombie();
 
-	 
+
 	//"Vida" del Zombie
 
 
@@ -63,6 +63,8 @@ protected:
 	//TArray<FString> Materiales;
 
 public:
+
+
 
 	//// "Arma" el zombie
 	//void Armar();
@@ -83,5 +85,8 @@ public:
 	// Change the Maneuver and set "BattleStrategy" variable
 	void AniadirManiobres(AActor* myEstrategias);
 	// Engage with the current Battle Strategy
-	void RealiazarManiobres(AActor* Planta);
+	void RealiazarManiobres(TMap<FString, AActor*> Actores);
+
+
+	bool ZombieMovido;
 };

@@ -20,5 +20,5 @@ AZombieAguaDelfin::AZombieAguaDelfin()
 	RootComponent = ZombieMeshDelfin;
 
 	// Va a morir de 4 disparos
-	Vida = 80;
+	Vida = 100;
 }

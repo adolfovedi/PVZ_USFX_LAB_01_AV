@@ -9,7 +9,7 @@ AZombieAguaFlotante::AZombieAguaFlotante()
 	NombreZombie = "AguaFlotante";
 
 
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ZombieMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_QuadPyramid.Shape_QuadPyramid'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ZombieMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere'"));
 	//static ConstructorHelpers::FObjectFinder<UStaticMesh> ZombieMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
 
 	ZombieMeshFlotante = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ZombieMeshFlotante"));
@@ -21,7 +21,7 @@ AZombieAguaFlotante::AZombieAguaFlotante()
 	RootComponent = ZombieMeshFlotante;
 
 	// Va  a morir de 5 diparos
-	Vida = 100;
+	Vida = 0;
 }
 
 

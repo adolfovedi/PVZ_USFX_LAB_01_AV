@@ -6,7 +6,7 @@
 // Sets default values
 AEstrategiaAutodestruccion::AEstrategiaAutodestruccion()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 }
@@ -15,7 +15,7 @@ AEstrategiaAutodestruccion::AEstrategiaAutodestruccion()
 void AEstrategiaAutodestruccion::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 // Called every frame
@@ -25,7 +25,7 @@ void AEstrategiaAutodestruccion::Tick(float DeltaTime)
 
 }
 
-void AEstrategiaAutodestruccion::EstrategiaPlantas(AActor* Planta)
+void AEstrategiaAutodestruccion::Estrategias_Ataque(TMap<FString, AActor*> Actores)
 {
 	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Estrategia de Autodestruccion")));
 }

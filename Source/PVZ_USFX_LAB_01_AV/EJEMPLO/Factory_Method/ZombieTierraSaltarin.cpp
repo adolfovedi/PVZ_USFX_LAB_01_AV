@@ -20,7 +20,7 @@ AZombieTierraSaltarin::AZombieTierraSaltarin()
 	RootComponent = ZombieMeshSaltarin;
 
 	// va a morir de 3 disparos
-	Vida = 60;
+	Vida = 120;
 }
 
 

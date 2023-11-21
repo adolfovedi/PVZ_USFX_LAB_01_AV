@@ -8,7 +8,7 @@
 // Sets default values
 AEstrategiaBailedefensivo::AEstrategiaBailedefensivo()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	TimeToSpawn = 3.0f;
 	//LocationBailarin = FVector(0.0f,0.0f,0.0f);
@@ -18,25 +18,25 @@ AEstrategiaBailedefensivo::AEstrategiaBailedefensivo()
 void AEstrategiaBailedefensivo::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 // Called every frame
 void AEstrategiaBailedefensivo::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	
+
 
 }
 
 //
-void AEstrategiaBailedefensivo::EstrategiaPlantas(AActor* Planta)
+void AEstrategiaBailedefensivo::Estrategias_Ataque(TMap<FString, AActor*> Actores)
 {
-	ZombieTierraMichaelJackson = Cast<AZombieTierraMichaelJackson>(Planta);//casteamos el actor a zombie-----------------
+	//ZombieTierraMichaelJackson = Cast<AZombieTierraMichaelJackson>(Planta);//casteamos el actor a zombie-----------------
 
-	//--------------llamamos a la funcion de spawnear zombies cada 3 sgdos-----------------
-	GetWorldTimerManager().SetTimer(UnusedHandle, this, &AEstrategiaBailedefensivo::SpawmZombi, 3.0f, true);
-	
+	////--------------llamamos a la funcion de spawnear zombies cada 3 sgdos-----------------
+	//GetWorldTimerManager().SetTimer(UnusedHandle, this, &AEstrategiaBailedefensivo::SpawmZombi, 3.0f, true);
+	//
 }
 
 bool AEstrategiaBailedefensivo::EstaPosicionOcupadaPorZombie(FVector Posicion)
@@ -58,7 +58,7 @@ bool AEstrategiaBailedefensivo::EstaPosicionOcupadaPorZombie(FVector Posicion)
 		{
 			// Calcula la distancia entre la posición del zombie y la posición a spawnear
 			float Distancia = FVector::Dist(Zombie->GetActorLocation(), Posicion);
-						// Define una distancia mínima para spawnear, por ejemplo, 100 unidades
+			// Define una distancia mínima para spawnear, por ejemplo, 100 unidades
 			float DistanciaMinimaParaSpawnear = 100.0f;
 
 			// Si la distancia es menor que la distancia mínima, la posición está ocupada
@@ -73,7 +73,7 @@ bool AEstrategiaBailedefensivo::EstaPosicionOcupadaPorZombie(FVector Posicion)
 
 void AEstrategiaBailedefensivo::SpawmZombi()
 {
-	
+
 	if (ZombieTierraMichaelJackson) {
 		if (ZombieTierraMichaelJackson->IsValidLowLevel()) {
 			if (ZombieTierraMichaelJackson->IsPendingKill()) {
@@ -90,7 +90,7 @@ void AEstrategiaBailedefensivo::SpawmZombi()
 				LocationBailarinSuperior = ZombieTierraMichaelJackson->GetActorLocation() - FVector(200.0f, 0.0f, 0.0f);
 				LocationBailarinInferior = ZombieTierraMichaelJackson->GetActorLocation() + FVector(200.0f, 0.0f, 0.0f);
 				LocationBailarinAtras = ZombieTierraMichaelJackson->GetActorLocation() + FVector(0.0f, 130.0f, 0.0f);
-				
+
 				//-----------------estamos Spawnenado los zombies bailarines-----------------
 				if (EstaPosicionOcupadaPorZombie(LocationBailarinAtras) == false) {
 					GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Posicion Superior Libre ")));
@@ -113,11 +113,11 @@ void AEstrategiaBailedefensivo::SpawmZombi()
 			}
 		}
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 }
 
 

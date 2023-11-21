@@ -11,8 +11,8 @@ UCLASS()
 class PVZ_USFX_LAB_01_AV_API AEstrategiaRelentizacion : public AActor, public IEstrategias
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	AEstrategiaRelentizacion();
 
@@ -20,12 +20,12 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	//Execute the Maneuver of this Strategy
-	virtual void EstrategiaPlantas(AActor*Planta) override;
+	virtual void Estrategias_Ataque(TMap<FString, AActor*> Actores) override;
 
 
 };

@@ -12,19 +12,19 @@ UCLASS()
 class PVZ_USFX_LAB_01_AV_API APlanta_estrategica : public APlantas
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	APlanta_estrategica();
 private:
 	//The current Battle Strategy
 	IEstrategias* Estrategias;
 
-//protected:
-	// Called when the game starts or when spawned
+	//protected:
+		// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	//// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	// 

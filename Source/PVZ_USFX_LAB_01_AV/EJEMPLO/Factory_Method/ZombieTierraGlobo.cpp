@@ -24,16 +24,7 @@ AZombieTierraGlobo::AZombieTierraGlobo()
 	RootComponent = ZombieMeshGlobo;
 
 	// va a morir de 2 disparos
-	Vida = 40;
-}
-
-
-
-void AZombieTierraGlobo::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)
-{
-
-	this->Destroy();
-
+	Vida = 200;
 }
 
 //void AZombieTierraGlobo::Elaboracion()

@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeGeneradorPlantasCuerpoAtaque() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGeneradorPlantasCuerpoAtaque_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
+		{ "Comment", "/**\n *\n */" },
 		{ "IncludePath", "EJEMPLO/Factory_Method/GeneradorPlantasCuerpoAtaque.h" },
 		{ "ModuleRelativePath", "EJEMPLO/Factory_Method/GeneradorPlantasCuerpoAtaque.h" },
 	};
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeGeneradorPlantasCuerpoAtaque() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGeneradorPlantasCuerpoAtaque, 3019233306);
+	IMPLEMENT_CLASS(AGeneradorPlantasCuerpoAtaque, 3273293330);
 	template<> PVZ_USFX_LAB_01_AV_API UClass* StaticClass<AGeneradorPlantasCuerpoAtaque>()
 	{
 		return AGeneradorPlantasCuerpoAtaque::StaticClass();

@@ -21,3 +21,5 @@ C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\G
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\GeneradorPlantasRangoAtaque.generated.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/Ejemplo/Estrategy/EstrategiaBailedefensivo.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\EstrategiaBailedefensivo.generated.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/Ejemplo/Estrategy/EstrategiaOrdenarZombies.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\EstrategiaOrdenarZombies.generated.h

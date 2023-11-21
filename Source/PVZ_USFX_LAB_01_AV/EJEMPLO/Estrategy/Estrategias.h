@@ -14,7 +14,7 @@ class UEstrategias : public UInterface
 };
 
 /**
- * 
+ *
  */
 class PVZ_USFX_LAB_01_AV_API IEstrategias
 {
@@ -24,6 +24,7 @@ class PVZ_USFX_LAB_01_AV_API IEstrategias
 public:
 
 	//The pure virtual functions of the BattleShipStrategy
-	virtual void EstrategiaPlantas(AActor* Planta) = 0;
+
+	virtual void Estrategias_Ataque(TMap<FString, AActor*> Actores) = 0;
 
 };

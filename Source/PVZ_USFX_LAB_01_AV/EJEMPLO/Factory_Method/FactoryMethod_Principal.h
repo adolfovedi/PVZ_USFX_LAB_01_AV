@@ -10,8 +10,8 @@ UCLASS()
 class PVZ_USFX_LAB_01_AV_API AFactoryMethod_Principal : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	AFactoryMethod_Principal();
 
@@ -19,8 +19,9 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	TMap<FString, AActor*> Contenedor_Actores;
 };

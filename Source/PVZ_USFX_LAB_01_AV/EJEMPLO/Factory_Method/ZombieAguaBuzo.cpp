@@ -21,7 +21,7 @@ AZombieAguaBuzo::AZombieAguaBuzo()
 	RootComponent = ZombieMeshBuzo;
 
 	// va a morir despues de 3 disparos
-	Vida = 60;
+	Vida = 80;
 }
 
 

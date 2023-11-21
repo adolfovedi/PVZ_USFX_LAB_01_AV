@@ -6,7 +6,7 @@
 // Sets default values
 AEstrategiaRelentizacion::AEstrategiaRelentizacion()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 }
@@ -15,7 +15,7 @@ AEstrategiaRelentizacion::AEstrategiaRelentizacion()
 void AEstrategiaRelentizacion::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 // Called every frame
@@ -25,7 +25,7 @@ void AEstrategiaRelentizacion::Tick(float DeltaTime)
 
 }
 
-void AEstrategiaRelentizacion::EstrategiaPlantas(AActor* Planta)
+void AEstrategiaRelentizacion::Estrategias_Ataque(TMap<FString, AActor*> Actores)
 {
 
 	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Estrategia de Relentizacion")));
