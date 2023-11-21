@@ -47,14 +47,15 @@ protected:
 
 
 	int Vida;
-	bool MoverZombie;
+
 	void MorirZombie();
 
 
 	//"Vida" del Zombie
 
 
-
+	/*UFUNCTION()
+	void OnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);*/
 
 	//// "Armadura" del Zombie
 	//FString Armadura;
@@ -89,4 +90,7 @@ public:
 
 
 	bool ZombieMovido;
+	bool MoverZombie;
+
+
 };

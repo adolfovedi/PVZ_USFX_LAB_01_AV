@@ -17,14 +17,14 @@ AZombieTierraGlobo::AZombieTierraGlobo()
 
 	ZombieMeshGlobo = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ZombieMeshGlobo"));
 	ZombieMeshGlobo->SetStaticMesh(ZombieMesh.Object);
-	ZombieMeshGlobo->SetCollisionProfileName(UCollisionProfile::BlockAll_ProfileName);
-	ZombieMeshGlobo->SetSimulatePhysics(true);
+	/*ZombieMeshGlobo->SetCollisionProfileName(UCollisionProfile::BlockAll_ProfileName);
+	ZombieMeshGlobo->SetSimulatePhysics(true);*/
 	//ZombieMeshComponent->OnComponentBeginOverlap.AddDynamic(this, &AZombiess::OnOverlapBeginFunction);		// set up a notification for when this component hits something
 
 	RootComponent = ZombieMeshGlobo;
 
 	// va a morir de 2 disparos
-	Vida = 200;
+	Vida = 300;
 }
 
 //void AZombieTierraGlobo::Elaboracion()

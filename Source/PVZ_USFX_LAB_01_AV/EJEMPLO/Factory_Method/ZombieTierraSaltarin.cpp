@@ -13,14 +13,14 @@ AZombieTierraSaltarin::AZombieTierraSaltarin()
 
 	ZombieMeshSaltarin = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ZombieMeshSaltarin"));
 	ZombieMeshSaltarin->SetStaticMesh(ZombieMesh.Object);
-	ZombieMeshSaltarin->SetCollisionProfileName(UCollisionProfile::BlockAll_ProfileName);
-	ZombieMeshSaltarin->SetSimulatePhysics(true);
+	//ZombieMeshSaltarin->SetCollisionProfileName(UCollisionProfile::BlockAll_ProfileName);
+	//ZombieMeshSaltarin->SetSimulatePhysics(true);
 	//ZombieMeshComponent->OnComponentBeginOverlap.AddDynamic(this, &AZombiess::OnOverlapBeginFunction);		// set up a notification for when this component hits something
 
 	RootComponent = ZombieMeshSaltarin;
 
 	// va a morir de 3 disparos
-	Vida = 120;
+	Vida = 160;
 }
 
 

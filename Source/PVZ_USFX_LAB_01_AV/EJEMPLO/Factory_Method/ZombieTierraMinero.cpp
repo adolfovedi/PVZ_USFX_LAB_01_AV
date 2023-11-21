@@ -15,14 +15,14 @@ AZombieTierraMinero::AZombieTierraMinero()
 
 	ZombieMeshMinero = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ZombieMeshMinero"));
 	ZombieMeshMinero->SetStaticMesh(ZombieMesh.Object);
-	ZombieMeshMinero->SetCollisionProfileName(UCollisionProfile::BlockAll_ProfileName);
-	ZombieMeshMinero->SetSimulatePhysics(true);
+	//ZombieMeshMinero->SetCollisionProfileName(UCollisionProfile::BlockAll_ProfileName);
+	//ZombieMeshMinero->SetSimulatePhysics(true);
 	//ZombieMeshComponent->OnComponentBeginOverlap.AddDynamic(this, &AZombiess::OnOverlapBeginFunction);		// set up a notification for when this component hits something
 
 	RootComponent = ZombieMeshMinero;
 
 	// va a morir de 1 disparo
-	Vida = 20;
+	Vida = 360;
 }
 
 

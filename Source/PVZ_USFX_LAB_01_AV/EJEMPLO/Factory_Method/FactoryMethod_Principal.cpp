@@ -28,32 +28,42 @@ void AFactoryMethod_Principal::BeginPlay()
 	AGeneradorZombies* GeneradorZombiesAgua = GetWorld()->SpawnActor<AGeneradorZombiesAgua>(AGeneradorZombiesAgua::StaticClass());
 	AGeneradorZombies* GeneradorZombiesTierra = GetWorld()->SpawnActor<AGeneradorZombiesTierra>(AGeneradorZombiesTierra::StaticClass());
 
+
 	//Create an Outer Health Potion and log its name
 	//------------------
 	AZombies* Zombie;
 
 
-	//--------------------------------Crea los generadores de zombiesTierra--------------------------
-	Zombie = GeneradorZombiesTierra->OrdenarZombies("TierraGlobo", FVector(-1500.0f, 200.0f, 200.0f));
+	//Genera una ubicación aleatoria
+	FVector SpawnLocation = FMath::RandPointInBox(FBox(FVector(-1370, 1460, 200), FVector(-600, 140, 200)));
+	FVector SpawnLocation1 = FMath::RandPointInBox(FBox(FVector(-1370, 1460, 200), FVector(-600, 140, 200)));
+	FVector SpawnLocation2 = FMath::RandPointInBox(FBox(FVector(-1370, 1460, 200), FVector(-600, 140, 200)));
+	FVector SpawnLocation3 = FMath::RandPointInBox(FBox(FVector(-1370, 1460, 200), FVector(-600, 140, 200)));
+	FVector SpawnLocation4 = FMath::RandPointInBox(FBox(FVector(-1370, 1460, 200), FVector(-600, 140, 200)));
+	FVector SpawnLocation5 = FMath::RandPointInBox(FBox(FVector(-1370, 1460, 200), FVector(-600, 140, 200)));
+
+
+	Zombie = GeneradorZombiesTierra->OrdenarZombies("TierraGlobo", SpawnLocation);
 	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
 	Contenedor_Actores.Add("TierraGlobo", Zombie);
-	Zombie = GeneradorZombiesTierra->OrdenarZombies("TierraMinero", FVector(-1300.0f, 800.0f, 200.0f));
+
+	Zombie = GeneradorZombiesTierra->OrdenarZombies("TierraMinero", SpawnLocation1);
 	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
 	Contenedor_Actores.Add("TierraMinero", Zombie);
 
-	Zombie = GeneradorZombiesTierra->OrdenarZombies("TierraSaltarin", FVector(-1100.0f, 500.0f, 200.0f));
+	Zombie = GeneradorZombiesTierra->OrdenarZombies("TierraSaltarin", SpawnLocation2);
 	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
 	Contenedor_Actores.Add("TierraSaltarin", Zombie);
 
-	Zombie = GeneradorZombiesAgua->OrdenarZombies("AguaDelfin", FVector(-900.0f, 1000.0f, 200.0f));
+	Zombie = GeneradorZombiesAgua->OrdenarZombies("AguaDelfin", SpawnLocation3);
 	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
 	Contenedor_Actores.Add("AguaDelfin", Zombie);
 
-	Zombie = GeneradorZombiesAgua->OrdenarZombies("AguaFlotante", FVector(-700.0f, 600.0f, 200.0f));
+	Zombie = GeneradorZombiesAgua->OrdenarZombies("AguaFlotante", SpawnLocation4);
 	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
 	Contenedor_Actores.Add("AguaFlotante", Zombie);
 
-	Zombie = GeneradorZombiesAgua->OrdenarZombies("AguaBuzo", FVector(-500.0f, 500.0f, 200.0f));
+	Zombie = GeneradorZombiesAgua->OrdenarZombies("AguaBuzo", SpawnLocation5);
 	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
 	Contenedor_Actores.Add("AguaBuzo", Zombie);
 

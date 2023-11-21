@@ -18,8 +18,9 @@ AZombies::AZombies()
 
 	ZombieMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ZombieMesh"));
 	ZombieMeshComponent->SetStaticMesh(ZombieMesh.Object);
-	ZombieMeshComponent->SetCollisionProfileName(UCollisionProfile::BlockAll_ProfileName);
-	ZombieMeshComponent->BodyInstance.SetCollisionProfileName("ZombieMesh");
+	//ZombieMeshComponent->SetCollisionProfileName(UCollisionProfile::BlockAll_ProfileName);
+
+	//ZombieMeshComponent->BodyInstance.SetCollisionProfileName("ZombieMesh");
 	//ZombieMeshComponent->OnComponentHit.AddDynamic(this, &AZombies::OnHit);
 	ZombieMeshComponent->SetRelativeScale3D(FVector(1.f, 1.f, 1.f));
 
@@ -29,8 +30,15 @@ AZombies::AZombies()
 	RootComponent = ZombieMeshComponent;
 
 	ZombieBoxComponent = CreateDefaultSubobject<UBoxComponent>(TEXT("ZombieBoxComponent"));
+	//ZombieBoxComponent->OnComponentEndOverlap.AddDynamic(this, &AZombies::OnOverlapEnd);
 	/*ZombieBoxComponent->SetBoxExtent(FVector(100.0f, 100.0f, 100.0f));*/
 	ZombieBoxComponent->SetHiddenInGame(true);
+	ZombieBoxComponent->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	//SetActorHiddenInGame(true);
+	//SetActorEnableCollision(false);
+	SetActorTickEnabled(false);
+	// Bind the overlap event
+	//GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &AZombieCharacter::OnZombieOverlap);
 
 
 	//-----------------colisiones-------------------
@@ -102,6 +110,11 @@ void AZombies::MorirZombie()
 
 }
 
+//void AZombies::OnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+//{
+//
+//}
+
 
 FString AZombies::GetNombreZombie()
 {
@@ -113,6 +126,12 @@ FString AZombies::GetNombreZombie()
 void AZombies::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)
 {
 
+	AZombies* Zombi = Cast<AZombies>(Other);
+	if (Zombi)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("choco con totro zombie")));
+	}
+
 	APVZ_USFX_LAB_01_AVProjectile* Proyectil = Cast<APVZ_USFX_LAB_01_AVProjectile>(Other);
 	if (Proyectil)
 	{
@@ -123,7 +142,6 @@ void AZombies::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveC
 		}
 		Vida = Vida - 20;
 	}
-
 
 }
 

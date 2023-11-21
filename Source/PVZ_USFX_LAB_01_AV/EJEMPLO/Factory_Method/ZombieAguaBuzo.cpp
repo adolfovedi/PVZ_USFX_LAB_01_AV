@@ -14,8 +14,8 @@ AZombieAguaBuzo::AZombieAguaBuzo()
 
 	ZombieMeshBuzo = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ZombieMeshBuzo"));
 	ZombieMeshBuzo->SetStaticMesh(ZombieMesh.Object);
-	ZombieMeshBuzo->SetCollisionProfileName(UCollisionProfile::BlockAll_ProfileName);
-	ZombieMeshBuzo->SetSimulatePhysics(true);
+	/*ZombieMeshBuzo->SetCollisionProfileName(UCollisionProfile::BlockAll_ProfileName);
+	ZombieMeshBuzo->SetSimulatePhysics(true);*/
 	//ZombieMeshComponent->OnComponentBeginOverlap.AddDynamic(this, &AZombiess::OnOverlapBeginFunction);		// set up a notification for when this component hits something
 
 	RootComponent = ZombieMeshBuzo;

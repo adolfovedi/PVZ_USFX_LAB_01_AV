@@ -36,7 +36,6 @@ void AStrategy_Principal::BeginPlay()
 
 	Planta_estrategica->AniadirManiobres(EstrategiaCambioLocalizacion);
 	//Engage with the current Strategy
-	//--------------Realizamos la maniobra de Relentizacion-----------------
 	Planta_estrategica->RealiazarManiobres(Planta_estrategica);
 
 }

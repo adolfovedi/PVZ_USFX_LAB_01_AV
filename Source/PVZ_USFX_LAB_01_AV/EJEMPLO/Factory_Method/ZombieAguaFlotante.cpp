@@ -14,14 +14,14 @@ AZombieAguaFlotante::AZombieAguaFlotante()
 
 	ZombieMeshFlotante = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ZombieMeshFlotante"));
 	ZombieMeshFlotante->SetStaticMesh(ZombieMesh.Object);
-	ZombieMeshFlotante->SetCollisionProfileName(UCollisionProfile::BlockAll_ProfileName);
-	ZombieMeshFlotante->SetSimulatePhysics(true);
+	/*ZombieMeshFlotante->SetCollisionProfileName(UCollisionProfile::BlockAll_ProfileName);
+	ZombieMeshFlotante->SetSimulatePhysics(true);*/
 	//ZombieMeshComponent->OnComponentBeginOverlap.AddDynamic(this, &AZombiess::OnOverlapBeginFunction);		// set up a notification for when this component hits something
 
 	RootComponent = ZombieMeshFlotante;
 
 	// Va  a morir de 5 diparos
-	Vida = 0;
+	Vida = 200;
 }
 
 

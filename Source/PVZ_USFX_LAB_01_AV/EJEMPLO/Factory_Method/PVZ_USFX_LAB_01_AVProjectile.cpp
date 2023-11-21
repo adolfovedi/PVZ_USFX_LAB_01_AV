@@ -32,7 +32,7 @@ APVZ_USFX_LAB_01_AVProjectile::APVZ_USFX_LAB_01_AVProjectile()
 	ProjectileMovement->ProjectileGravityScale = 0.f; // No gravity
 
 	// Die after 3 seconds by default
-	MaxDistance = 1000.0f;
+	MaxDistance = 1500.0f;
 	//InitialLifeSpan = 10.0f;
 	InitialLifeSpan = MaxDistance / ProjectileMovement->InitialSpeed;
 	DamageGenerates = 10.0f;

@@ -31,15 +31,50 @@ C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Decorator/Enemig
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Decorator/EnemigoADistancia.cpp
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Decorator/EnemigoCualquiera.cpp
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Decorator/EnemigoCuerpoACuerpo.cpp
-C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Estrategy/Estrategias.cpp
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Estrategy/EstrategiaAutodestruccion.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy\EstrategiaAutodestruccion.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy\Estrategias.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Estrategias.generated.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\EstrategiaAutodestruccion.generated.h
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Estrategy/EstrategiaBailedefensivo.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy\EstrategiaBailedefensivo.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\EstrategiaBailedefensivo.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/ZombieTierraBailarin.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\Zombies.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Zombies.generated.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\ZombieTierraBailarin.generated.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/ZombieTierraMichaelJackson.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\ZombieTierraMichaelJackson.generated.h
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Estrategy/EstrategiaCambioLocalizacion.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy\EstrategiaCambioLocalizacion.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy\Planta_estrategica.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/Plantas.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Plantas.generated.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Planta_estrategica.generated.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\EstrategiaCambioLocalizacion.generated.h
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Estrategy/EstrategiaRelentizacion.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy\EstrategiaRelentizacion.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\EstrategiaRelentizacion.generated.h
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Estrategy/Estrategias.cpp
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Estrategy/Planta_estrategica.cpp
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/GeneradorPlantas.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\GeneradorPlantas.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\GeneradorPlantas.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/GeneradorPlantasCuerpoAtaque.cpp
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\GeneradorPlantasCuerpoAtaque.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\GeneradorPlantas.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\Plantas.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Plantas.generated.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\GeneradorPlantas.generated.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\GeneradorPlantasCuerpoAtaque.generated.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\PlantasCarnibora.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\PlantasCarnibora.generated.h
@@ -58,8 +93,6 @@ C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\P
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\PlantasRepetidoras.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/GeneradorZombies.cpp
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\GeneradorZombies.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\Zombies.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Zombies.generated.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\GeneradorZombies.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/GeneradorZombiesAgua.cpp
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\GeneradorZombiesAgua.h
@@ -79,13 +112,7 @@ C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\Z
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\ZombieTierraMinero.generated.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\ZombieTierraSaltarin.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\ZombieTierraSaltarin.generated.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\ZombieTierraMichaelJackson.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\ZombieTierraMichaelJackson.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/Plantas.cpp
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\PVZ_USFX_LAB_01_AVProjectile.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
@@ -105,25 +132,8 @@ C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\P
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\PlayerControllerCamera.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Camera/CameraActor.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraActor.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
-C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/PVZ_USFX_LAB_01_AVProjectile.cpp
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ProjectileMovementComponent.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/ZombieTierraBailarin.cpp
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\ZombieTierraBailarin.h
-C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\ZombieTierraBailarin.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/ZombieTierraMichaelJackson.cpp
-C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/ZombieTierraMinero.cpp
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/Girasol.cpp
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\Girasol.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\Plant.h
@@ -461,6 +471,8 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFra
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/NavMovementComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\AI/Navigation/PathFollowingAgentInterface.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PathFollowingAgentInterface.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavMovementComponent.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PawnMovementComponent.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Interfaces/NetworkPredictionInterface.h
@@ -597,6 +609,8 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\VectorF
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\VectorFieldVolume.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/SpectatorPawnMovement.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpectatorPawnMovement.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ProjectileMovementComponent.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RotatingMovementComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RotatingMovementComponent.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/PawnNoiseEmitterComponent.h

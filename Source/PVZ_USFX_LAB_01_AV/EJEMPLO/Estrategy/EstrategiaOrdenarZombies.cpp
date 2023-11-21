@@ -11,7 +11,6 @@ AEstrategiaOrdenarZombies::AEstrategiaOrdenarZombies()
     PrimaryActorTick.bCanEverTick = true;
     CastReady = true;
 
-    //------------------Inicializa las localizaciones--------------------------
     MoverZombie01 = true;
     MoverZombie02 = false;
     MoverZombie03 = false;
@@ -19,14 +18,14 @@ AEstrategiaOrdenarZombies::AEstrategiaOrdenarZombies()
     MoverZombie05 = false;
     MoverZombie06 = false;
 
+    //---------Contenedor_Posiciones.Add(FVector(-1500.0f, 0.0f, 200.0f));---------
 
- 
-    Localizaciones.Add(FVector(-1500.0f, 0.0f, 200.0f));
-    Localizaciones.Add(FVector(-1500.0f, 150.0f, 200.0f));
-    Localizaciones.Add(FVector(-1500.0f, 300.0f, 200.0f));
-    Localizaciones.Add(FVector(-1500.0f, 450.0f, 200.0f));
-    Localizaciones.Add(FVector(-1500.0f, 500.0f, 200.0f));
-    Localizaciones.Add(FVector(-1500.0f, 650.0f, 200.0f));
+    Localizaciones.Add(FVector(-1500.0f, 1000.0f, 200.0f));
+    Localizaciones.Add(FVector(-1500.0f, 1150.0f, 200.0f));
+    Localizaciones.Add(FVector(-1500.0f, 1300.0f, 200.0f));
+    Localizaciones.Add(FVector(-1500.0f, 1450.0f, 200.0f));
+    Localizaciones.Add(FVector(-1500.0f, 1600.0f, 200.0f));
+    Localizaciones.Add(FVector(-1500.0f, 1850.0f, 200.0f));
 }
 
 // Called when the game starts or when spawned
@@ -132,10 +131,24 @@ void AEstrategiaOrdenarZombies::Tick(float DeltaTime)
             ZombieMovido = ZombieMover();
             CastReady = false;
         }
+
         cambiarUbicacion(DeltaTime, 5);
         if (ZombieMovido->GetActorLocation().Y <= Localizaciones[5].Y + 1.0f && ZombieMovido->GetActorLocation().Y >= Localizaciones[5].Y - 1.0f)
         {
+
+            class AZombies* ZombieWithMaxLife = nullptr;
+            for (class AZombies* ZombiePro : zombiesCon)
+            {
+                // Verificar si el puntero al zombie es válido
+                if (ZombiePro && ZombiePro->MoverZombie == false)
+                {
+                    ZombieWithMaxLife = ZombiePro;
+                    ZombieWithMaxLife->MoverZombie = true;
+                }
+            }
+
             //CastReady = true;
+            GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("el ultimo dejo de moverse")));
             MoverZombie06 = false;
         }
     }

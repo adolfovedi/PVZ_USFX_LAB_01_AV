@@ -16,7 +16,6 @@
 #include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/Estrategias.gen.cpp"
 #include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/FactoryMethod_Principal.gen.cpp"
 #include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/GeneradorPlantas.gen.cpp"
-#include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/GeneradorPlantasCuerpoAtaque.gen.cpp"
 #include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/GeneradorPlantasRangoAtaque.gen.cpp"
 #include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/GeneradorZombies.gen.cpp"
 #include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/GeneradorZombiesAgua.gen.cpp"
