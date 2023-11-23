@@ -169,6 +169,11 @@ void AZombies::RealiazarManiobres(TMap<FString, AActor*> Actores)
 	Estrategias->Estrategias_Ataque(Actores);
 }
 
+void AZombies::ColocarPlnta(AActor* Planta)
+{
+
+}
+
 
 void AZombies::SetMovingX(float _MovingX)
 {

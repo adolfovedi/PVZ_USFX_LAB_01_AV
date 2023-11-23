@@ -15,7 +15,7 @@ APlantas::APlantas()
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> PlantasMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cylinder.Shape_Cylinder'"));
 
 	PlantasMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PlantasMesh"));
-	//PlantMeshComponent->SetStaticMesh(PlantMesh.Object);
+	PlantasMeshComponent->SetStaticMesh(PlantasMesh.Object);
 	//PlantMeshComponent->SetCollisionProfileName(TEXT("Ignore"));
 	PlantasMeshComponent->SetCollisionProfileName(UCollisionProfile::BlockAll_ProfileName);
 	PlantasMeshComponent->SetSimulatePhysics(false);

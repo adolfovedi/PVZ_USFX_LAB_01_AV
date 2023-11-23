@@ -3,7 +3,8 @@
 
 #include "EstrategiaOrdenarZombies.h"
 #include "PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/Zombies.h"
-
+#include "PVZ_USFX_LAB_01_AV/EJEMPLO/Observer/PlantasObservados.h"
+#include "PVZ_USFX_LAB_01_AV/EJEMPLO/Observer/TorreLocalizacion.h"
 // Sets default values
 AEstrategiaOrdenarZombies::AEstrategiaOrdenarZombies()
 {
@@ -20,12 +21,14 @@ AEstrategiaOrdenarZombies::AEstrategiaOrdenarZombies()
 
     //---------Contenedor_Posiciones.Add(FVector(-1500.0f, 0.0f, 200.0f));---------
 
-    Localizaciones.Add(FVector(-1500.0f, 1000.0f, 200.0f));
+   /* Localizaciones.Add(FVector(-1500.0f, 1000.0f, 200.0f));
     Localizaciones.Add(FVector(-1500.0f, 1150.0f, 200.0f));
     Localizaciones.Add(FVector(-1500.0f, 1300.0f, 200.0f));
     Localizaciones.Add(FVector(-1500.0f, 1450.0f, 200.0f));
     Localizaciones.Add(FVector(-1500.0f, 1600.0f, 200.0f));
-    Localizaciones.Add(FVector(-1500.0f, 1850.0f, 200.0f));
+    Localizaciones.Add(FVector(-1500.0f, 1850.0f, 200.0f));*/
+
+    
 }
 
 // Called when the game starts or when spawned
@@ -45,9 +48,6 @@ void AEstrategiaOrdenarZombies::Tick(float DeltaTime)
         ZombieMovido = ZombieMover();
         CastReady = false;
     }
-
-
-
 
 
     if (MoverZombie01)
@@ -135,7 +135,7 @@ void AEstrategiaOrdenarZombies::Tick(float DeltaTime)
         cambiarUbicacion(DeltaTime, 5);
         if (ZombieMovido->GetActorLocation().Y <= Localizaciones[5].Y + 1.0f && ZombieMovido->GetActorLocation().Y >= Localizaciones[5].Y - 1.0f)
         {
-
+            TorreLocalizacion->DefinirEstado("ZombieEncontrado");
             class AZombies* ZombieWithMaxLife = nullptr;
             for (class AZombies* ZombiePro : zombiesCon)
             {
@@ -241,6 +241,21 @@ void AEstrategiaOrdenarZombies::cambiarUbicacion(float _DeltaTime, int Ubi)
     // Mueve el actor a la nueva ubicación
     ZombieMovido->SetActorLocation(NuevaUbicacion);
 }
+
+void AEstrategiaOrdenarZombies::CastPlanta(AActor* Planta, AActor* Torre)
+{
+       APlantasObservados* PlantasObservados = Cast<APlantasObservados>(Planta);
+	   TorreLocalizacion = Cast<ATorreLocalizacion>(Torre);
+       PosicionPlanta01 = PlantasObservados->GetPocisionObservador()+FVector(0.0f,1000.0f,0.0f);
+       Localizaciones.Add(PosicionPlanta01);
+       Localizaciones.Add(PosicionPlanta01 + FVector(0.0f, 150.0f, 0.0f));
+       Localizaciones.Add(PosicionPlanta01 + FVector(0.0f, 300.0f, 0.0f));
+       Localizaciones.Add(PosicionPlanta01 + FVector(0.0f, 450.0f, 0.0f));
+       Localizaciones.Add(PosicionPlanta01 + FVector(0.0f, 600.0f, 0.0f));
+       Localizaciones.Add(PosicionPlanta01 + FVector(0.0f, 750.0f, 0.0f));
+
+}
+
 
 
 

@@ -9,6 +9,9 @@
 #include "GeneradorPlantasRangoAtaque.h"
 #include "PVZ_USFX_LAB_01_AV/Ejemplo/Estrategy/EstrategiaBailedefensivo.h"
 #include "PVZ_USFX_LAB_01_AV/Ejemplo/Estrategy/EstrategiaOrdenarZombies.h"
+#include "PVZ_USFX_LAB_01_AV/Ejemplo/Observer/Observer_Principal.h"
+#include "PVZ_USFX_LAB_01_AV/Ejemplo/Observer/TorreLocalizacion.h"
+#include "PVZ_USFX_LAB_01_AV/Ejemplo/Observer/PlantasObservados.h"
 
 // Sets default values
 AFactoryMethod_Principal::AFactoryMethod_Principal()
@@ -22,6 +25,19 @@ AFactoryMethod_Principal::AFactoryMethod_Principal()
 void AFactoryMethod_Principal::BeginPlay()
 {
 	Super::BeginPlay();
+
+
+	//Aparicion del zombie abanderado
+	ATorreLocalizacion* TorreLocalizacion = GetWorld()->SpawnActor<ATorreLocalizacion>(ATorreLocalizacion::StaticClass());
+
+	//Aparicion del primer zombie que es el ansioso y definiendo su zombie como el abanderado
+	APlantasObservados* PlantasObservados = GetWorld()->SpawnActor<APlantasObservados>(APlantasObservados::StaticClass(), FVector(-1500.0f, -300.0f, 200.0f), FRotator::ZeroRotator);
+
+	PlantasObservados->DefinirPlanta(TorreLocalizacion); //Definimos la planta como el abanderado
+
+	//Cambia el estado del zombie abanderado, para que los suscriptores ejecuten su rutina
+
+	TorreLocalizacion->DefinirEstado("ZombieOculto"); //Cambia el estado del zombie abanderado, para que los suscriptores ejecuten su rutina
 
 
 	//--------------------------------Crea los generadores de zombies--------------------------
@@ -43,7 +59,7 @@ void AFactoryMethod_Principal::BeginPlay()
 	FVector SpawnLocation5 = FMath::RandPointInBox(FBox(FVector(-1370, 1460, 200), FVector(-600, 140, 200)));
 
 
-	Zombie = GeneradorZombiesTierra->OrdenarZombies("TierraGlobo", SpawnLocation);
+	Zombie = GeneradorZombiesTierra->OrdenarZombies("TierraGlobo", FVector(-1500.0f, 500.0f, 200.0f));
 	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
 	Contenedor_Actores.Add("TierraGlobo", Zombie);
 
@@ -78,7 +94,7 @@ void AFactoryMethod_Principal::BeginPlay()
 	//Engage with the current Strategy
 	Zombie->RealiazarManiobres(Contenedor_Actores);
 
-
+	EstrategiaOrdenarZombies->CastPlanta(PlantasObservados, TorreLocalizacion);
 
 	//--------------------------------Crea los generadores de plantas--------------------------
 
@@ -87,11 +103,12 @@ void AFactoryMethod_Principal::BeginPlay()
 
 	//Create an Outer Health Potion and log its name
 
-	APlantas* Planta;
+	
+	//APlantas* Planta;
 
 	//--------------------------------Crea los generadores de plantasRangoAtaque--------------------------
 
-	Planta = GeneradorPlantasRangoAtaque->OrdenarPlantas("HieloGuisantes", FVector(-1500.0f, -300.0f, 200.0f));
+	//Planta = GeneradorPlantasRangoAtaque->OrdenarPlantas("HieloGuisantes", FVector(-1500.0f, -300.0f, 200.0f));
 	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
 
 	//Planta = GeneradorPlantasRangoAtaque->OrdenarPlantas("Lanzaguisante", FVector(-700.0f, -300.0f, 200.0f));

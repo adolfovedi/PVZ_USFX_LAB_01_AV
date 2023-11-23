@@ -46,9 +46,7 @@
 #include "Ejemplo/Estrategy/Strategy_Principal.h"
 #include "Ejemplo/Decorator/Decorator_Principal.h"
 
-
-
-//#include "Ejemplo/Observer/Observer_Principal.h"
+#include "Ejemplo/Observer/Observer_Principal.h"
 //------------------------------------------------------------------
 
 
@@ -165,6 +163,8 @@ void APVZ_USFX_LAB_01_AVGameMode::EjemploPatrones()
 
 	//ADecorator_Principal* Decorator = GetWorld()->SpawnActor<ADecorator_Principal>(ADecorator_Principal::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
 
+	//}
+	// 
 	//AObserver_Principal* Observer = GetWorld()->SpawnActor<AObserver_Principal>(AObserver_Principal::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
 
 }
@@ -199,7 +199,7 @@ void APVZ_USFX_LAB_01_AVGameMode::BeginPlay()
 	//ASol* Sol2 = GetWorld()->SpawnActor<ASol>(ASol::StaticClass(), FVector(-450, -50, 160), FRotator::ZeroRotator);
 	//
 
-
+	//AObserver_Principal* Observer = GetWorld()->SpawnActor<AObserver_Principal>(AObserver_Principal::StaticClass());
 	AFactoryMethod_Principal* FactoryMethod = GetWorld()->SpawnActor<AFactoryMethod_Principal>(AFactoryMethod_Principal::StaticClass());
 	//AStrategy_Principal* Estrategy = GetWorld()->SpawnActor<AStrategy_Principal>(AStrategy_Principal::StaticClass());
 

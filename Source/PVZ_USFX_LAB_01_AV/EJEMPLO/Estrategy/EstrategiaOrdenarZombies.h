@@ -42,6 +42,7 @@ public:
 	bool MoverZombie04;
 	bool MoverZombie05;
 	bool MoverZombie06;
+	FVector PosicionPlanta01;
 
 	TArray<FVector> Localizaciones;
 
@@ -55,4 +56,6 @@ public:
 
 
 	void cambiarUbicacion(float _DeltaTime, int Ubi);
+	void CastPlanta(AActor* Planta, AActor* Torre);
+	class ATorreLocalizacion* TorreLocalizacion;
 };

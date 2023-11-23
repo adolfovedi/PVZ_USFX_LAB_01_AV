@@ -91,6 +91,6 @@ public:
 
 	bool ZombieMovido;
 	bool MoverZombie;
-
+	void ColocarPlnta(AActor* Planta);
 
 };
