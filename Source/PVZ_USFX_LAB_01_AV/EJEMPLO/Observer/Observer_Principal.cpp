@@ -20,14 +20,14 @@ void AObserver_Principal::BeginPlay()
 	//Aparicion del zombie abanderado
 	ATorreLocalizacion* TorreLocalizacion = GetWorld()->SpawnActor<ATorreLocalizacion>(ATorreLocalizacion::StaticClass());
 
-	//Aparicion del primer zombie que es el ansioso y definiendo su zombie como el abanderado
+	//------------la posicion donde estamos spawnenado la planta es la posicion de la torre de localizacion
 	APlantasObservados* PlantasObservados = GetWorld()->SpawnActor<APlantasObservados>(APlantasObservados::StaticClass(), FVector(-700.0f, -300.0f, 200.0f),FRotator::ZeroRotator);
 
 	PlantasObservados->DefinirPlanta(TorreLocalizacion); //Definimos la planta como el abanderado
 
 	//Cambia el estado del zombie abanderado, para que los suscriptores ejecuten su rutina
 
-	TorreLocalizacion->DefinirEstado("ZombieOculto"); //Cambia el estado del zombie abanderado, para que los suscriptores ejecuten su rutina
+	TorreLocalizacion->DefinirEstado("PlantaOculta"); //Cambia el estado del zombie abanderado, para que los suscriptores ejecuten su rutina
 
 	
 	//TorreLocalizacion->DefinirEstado("ZombieEncontrado"); //Cambia el estado del zombie abanderado, para que los suscriptores ejecuten su rutina

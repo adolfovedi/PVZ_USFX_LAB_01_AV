@@ -12,6 +12,8 @@
 #include "PVZ_USFX_LAB_01_AV/Ejemplo/Observer/Observer_Principal.h"
 #include "PVZ_USFX_LAB_01_AV/Ejemplo/Observer/TorreLocalizacion.h"
 #include "PVZ_USFX_LAB_01_AV/Ejemplo/Observer/PlantasObservados.h"
+#include "PVZ_USFX_LAB_01_AV/Ejemplo/Estrategy/OrdenarZombieVertical.h"
+#include "PVZ_USFX_LAB_01_AV/Ejemplo/Estrategy/OrdenarZombieHorizontal.h"
 
 // Sets default values
 AFactoryMethod_Principal::AFactoryMethod_Principal()
@@ -31,13 +33,13 @@ void AFactoryMethod_Principal::BeginPlay()
 	ATorreLocalizacion* TorreLocalizacion = GetWorld()->SpawnActor<ATorreLocalizacion>(ATorreLocalizacion::StaticClass());
 
 	//Aparicion del primer zombie que es el ansioso y definiendo su zombie como el abanderado
-	APlantasObservados* PlantasObservados = GetWorld()->SpawnActor<APlantasObservados>(APlantasObservados::StaticClass(), FVector(-1500.0f, -300.0f, 200.0f), FRotator::ZeroRotator);
+	APlantasObservados* PlantasObservados = GetWorld()->SpawnActor<APlantasObservados>(APlantasObservados::StaticClass(), FVector(-1000.0f, -300.0f, 200.0f), FRotator::ZeroRotator);
 
 	PlantasObservados->DefinirPlanta(TorreLocalizacion); //Definimos la planta como el abanderado
 
 	//Cambia el estado del zombie abanderado, para que los suscriptores ejecuten su rutina
 
-	TorreLocalizacion->DefinirEstado("ZombieOculto"); //Cambia el estado del zombie abanderado, para que los suscriptores ejecuten su rutina
+	TorreLocalizacion->DefinirEstado("PlantaOculta"); //Cambia el estado del zombie abanderado, para que los suscriptores ejecuten su rutina
 
 
 	//--------------------------------Crea los generadores de zombies--------------------------
@@ -50,7 +52,7 @@ void AFactoryMethod_Principal::BeginPlay()
 	AZombies* Zombie;
 
 
-	//Genera una ubicación aleatoria
+	//----Genera una ubicación aleatoria para cada zombie
 	FVector SpawnLocation = FMath::RandPointInBox(FBox(FVector(-1370, 1460, 200), FVector(-600, 140, 200)));
 	FVector SpawnLocation1 = FMath::RandPointInBox(FBox(FVector(-1370, 1460, 200), FVector(-600, 140, 200)));
 	FVector SpawnLocation2 = FMath::RandPointInBox(FBox(FVector(-1370, 1460, 200), FVector(-600, 140, 200)));
@@ -58,11 +60,12 @@ void AFactoryMethod_Principal::BeginPlay()
 	FVector SpawnLocation4 = FMath::RandPointInBox(FBox(FVector(-1370, 1460, 200), FVector(-600, 140, 200)));
 	FVector SpawnLocation5 = FMath::RandPointInBox(FBox(FVector(-1370, 1460, 200), FVector(-600, 140, 200)));
 
-
+	// Genera un zombie en el generador de zombies de tierra con coordenadas específicas
 	Zombie = GeneradorZombiesTierra->OrdenarZombies("TierraGlobo", FVector(-1500.0f, 500.0f, 200.0f));
 	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
 	Contenedor_Actores.Add("TierraGlobo", Zombie);
 
+	// Genera un zombie en el generador de zombies de tierra tipo "Minero" en una ubicación específica
 	Zombie = GeneradorZombiesTierra->OrdenarZombies("TierraMinero", SpawnLocation1);
 	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El zombie es %s"), *Zombie->GetNombreZombie()));
 	Contenedor_Actores.Add("TierraMinero", Zombie);
@@ -86,15 +89,18 @@ void AFactoryMethod_Principal::BeginPlay()
 	//--------------------------------Crea los generadores de zombies---------------------
 	//Zombie = GeneradorZombiesTierra->OrdenarZombies("MichaelJackson",FVector(-900.0f, 800.0f, 200.0f));
 	//Contenedor_Actores.Add("MichaelJackson", Zombie);
-
-	AEstrategiaOrdenarZombies* EstrategiaOrdenarZombies = GetWorld()->SpawnActor<AEstrategiaOrdenarZombies>(AEstrategiaOrdenarZombies::StaticClass());
+	
+	//--------------------------------Crea los generadores de zombies---------------------
+	//AEstrategiaOrdenarZombies* EstrategiaOrdenarZombies = GetWorld()->SpawnActor<AEstrategiaOrdenarZombies>(AEstrategiaOrdenarZombies::StaticClass());
+	AOrdenarZombieHorizontal* OrdenarZombieHorizontal = GetWorld()->SpawnActor<AOrdenarZombieHorizontal>(AOrdenarZombieHorizontal::StaticClass());
+	//AOrdenarZombieVertical* OrdenarZombieVertical = GetWorld()->SpawnActor<AOrdenarZombieVertical>(AOrdenarZombieVertical::StaticClass());
 
 	//----------donde pasamos el zombie para que sepa que estrategia usar-------
-	Zombie->AniadirManiobres(EstrategiaOrdenarZombies);
+	Zombie->AniadirManiobres(OrdenarZombieHorizontal);
 	//Engage with the current Strategy
 	Zombie->RealiazarManiobres(Contenedor_Actores);
 
-	EstrategiaOrdenarZombies->CastPlanta(PlantasObservados, TorreLocalizacion);
+	OrdenarZombieHorizontal->CastPlanta(PlantasObservados, TorreLocalizacion);
 
 	//--------------------------------Crea los generadores de plantas--------------------------
 

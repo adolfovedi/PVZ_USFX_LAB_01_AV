@@ -49,7 +49,7 @@ protected:
 	int Vida;
 
 	void MorirZombie();
-
+	class AOrdenarZombieHorizontal* OrdenarZombieHorizontal;
 
 	//"Vida" del Zombie
 
@@ -89,8 +89,16 @@ public:
 	void RealiazarManiobres(TMap<FString, AActor*> Actores);
 
 
+
+	bool ZombieMovido02;
+
 	bool ZombieMovido;
 	bool MoverZombie;
 	void ColocarPlnta(AActor* Planta);
-
+	bool PrimerZombieMuerto;
+	TMap<FString, AActor*> Contenedor_Zombies;
+	class AZombies* Zombies;
+	class APlantasObservados * PlantaObservada;
+	void CastPlantaObservada(AActor* Planta);
+	bool PrimerZombieListo;
 };

@@ -33,9 +33,9 @@ APlantas::APlantas()
 	//ZombieMeshComponent->OnComponentBeginOverlap.AddDynamic(this, &AZombiess::OnOverlapBeginFunction);		// set up a notification for when this component hits something
 
 
-
+	//--variables de disparo
 	bCanFire = true;
-	GunOffset = FVector(90.f, 0.f, 0.f);
+	GunOffset = FVector(90.f, 0.f, 0.f);//offset de la bala
 	FireRate = 1.0f;
 	TiempoTranscurrido = 0.0f;
 	TiempoEntreDisparos = 1.0f;
@@ -59,7 +59,7 @@ void APlantas::Tick(float DeltaTime)
 	if (Disparar)
 	{
 		TiempoTranscurrido += DeltaTime;
-		if (TiempoTranscurrido >= TiempoEntreDisparos)
+		if (TiempoTranscurrido >= TiempoEntreDisparos) //si el tiempo transcurrido es mayor o igual al tiempo entre disparos
 		{
 			DispararPlantas(FVector(0.f, 1.f, 0.f));
 			TiempoTranscurrido = 0.0f;

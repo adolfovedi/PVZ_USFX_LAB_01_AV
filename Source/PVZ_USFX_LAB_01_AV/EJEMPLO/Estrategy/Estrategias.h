@@ -24,7 +24,8 @@ class PVZ_USFX_LAB_01_AV_API IEstrategias
 public:
 
 	//The pure virtual functions of the BattleShipStrategy
-
+	
+	//-------Esta función virtual pura define las estrategias de ataque para los actores
 	virtual void Estrategias_Ataque(TMap<FString, AActor*> Actores) = 0;
 
 };

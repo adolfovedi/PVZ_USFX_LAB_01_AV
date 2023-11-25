@@ -8,10 +8,11 @@
 // Sets default values
 AEstrategiaOrdenarZombies::AEstrategiaOrdenarZombies()
 {
-    // Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+    // Configure este actor para que llame a Tick() en cada cuadro. Puede desactivar esto para mejorar el rendimiento si no lo necesita.
     PrimaryActorTick.bCanEverTick = true;
     CastReady = true;
 
+    //-----------------Localizaciones.Add(FVector(-1500.0f, 0.0f, 200.0f));-----------------
     MoverZombie01 = true;
     MoverZombie02 = false;
     MoverZombie03 = false;

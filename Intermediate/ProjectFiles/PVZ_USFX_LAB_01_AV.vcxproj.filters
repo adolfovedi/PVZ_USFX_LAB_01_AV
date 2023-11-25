@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\PVZ_USFX_LAB_01_AV.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{2F1854FD-C508-4345-93D7-5BF944D46ED5}</UniqueIdentifier>
+      <UniqueIdentifier>{5D34FE2A-07E4-4130-BBD9-6E68EB3CD099}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PVZ_USFX_LAB_01_AV.Target.cs">
       <Filter>Source</Filter>
@@ -18,7 +18,7 @@
     <None Include="..\..\Source.zip" />
     <None Include="..\..\Source_LAB_10 (2).zip" />
     <Filter Include="Config">
-      <UniqueIdentifier>{926761F8-6C81-4178-A94A-E7796DFEB35A}</UniqueIdentifier>
+      <UniqueIdentifier>{EA3E4E24-EA93-41A6-AD32-1F9F09288C42}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -36,7 +36,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\PVZ_USFX_LAB_01_AV">
-      <UniqueIdentifier>{090160C4-DE9E-46EF-A08D-62D41555C16A}</UniqueIdentifier>
+      <UniqueIdentifier>{FD8949B8-C1E4-4F0A-8720-4AC71D5E02EB}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\AbonoMagico.cpp">
       <Filter>Source\PVZ_USFX_LAB_01_AV</Filter>
@@ -258,10 +258,10 @@
       <Filter>Source\PVZ_USFX_LAB_01_AV</Filter>
     </ClInclude>
     <Filter Include="Source\PVZ_USFX_LAB_01_AV\EJEMPLO">
-      <UniqueIdentifier>{4F1AB5CE-B46C-4DEB-AE68-55883627F375}</UniqueIdentifier>
+      <UniqueIdentifier>{2A155CDD-2598-4832-A07D-52DD2E35E65C}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Decorator">
-      <UniqueIdentifier>{84DA0789-7E42-4419-8406-E3C50D42775D}</UniqueIdentifier>
+      <UniqueIdentifier>{13307CC5-EAAB-4637-B3C4-55F90AB3ABA2}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Decorator\DecoratorPlantas.cpp">
       <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Decorator</Filter>
@@ -300,7 +300,7 @@
       <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Decorator</Filter>
     </ClInclude>
     <Filter Include="Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy">
-      <UniqueIdentifier>{B4379307-2CA1-49E2-B810-9B32266CC56C}</UniqueIdentifier>
+      <UniqueIdentifier>{9DEF6BB8-247A-47B4-85ED-64333BD3140E}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy\EstrategiaAutodestruccion.cpp">
       <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy</Filter>
@@ -338,6 +338,18 @@
     <ClInclude Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy\Estrategias.h">
       <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy\OrdenarZombieHorizontal.cpp">
+      <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy\OrdenarZombieHorizontal.h">
+      <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy\OrdenarZombieVertical.cpp">
+      <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy\OrdenarZombieVertical.h">
+      <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy\Planta_estrategica.cpp">
       <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy</Filter>
     </ClCompile>
@@ -351,7 +363,7 @@
       <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Estrategy</Filter>
     </ClInclude>
     <Filter Include="Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method">
-      <UniqueIdentifier>{6DBF6802-363B-4286-AF33-2E7C945CBBAC}</UniqueIdentifier>
+      <UniqueIdentifier>{95253ECA-49B9-4ED2-BC41-A8CE209ED57D}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method\FactoryMethod_Principal.cpp">
       <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method</Filter>
@@ -510,7 +522,7 @@
       <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Factory_Method</Filter>
     </ClInclude>
     <Filter Include="Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Observer">
-      <UniqueIdentifier>{22B6985D-73E2-40D9-97CC-A3159994773D}</UniqueIdentifier>
+      <UniqueIdentifier>{964C7F5C-54A6-4CC7-8978-6164F26AA37A}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Observer\CambioDestino.cpp">
       <Filter>Source\PVZ_USFX_LAB_01_AV\EJEMPLO\Observer</Filter>

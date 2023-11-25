@@ -9,7 +9,8 @@
 APlantasObservados::APlantasObservados()
 {
 		PrimaryActorTick.bCanEverTick = true;
-		TiempoEntreDisparos = 0.2f;
+
+		TiempoEntreDisparos = 0.2f;//
 }
 
 void APlantasObservados::BeginPlay()
@@ -52,10 +53,10 @@ void APlantasObservados::CambioDestino()
 	//Get the current time of the Clock Tower
 	FString Estado = TorreLocalizacion->GetEstado();
 
-	if (!Estado.Compare("ZombieOculto"))
+	if (!Estado.Compare("PlantaOculta"))
 	{
 		//Ejecuta sus acciones estando calmado
-		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El estado es %s, La Planata esta  en Busca"), *Estado));
+		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El estado es: %s, El Zombie lo Encontro"), *Estado));
 		Disparar=false;
 		//Puedes poner lo que quieras aqui
 	
@@ -64,7 +65,7 @@ void APlantasObservados::CambioDestino()
 	else if (!Estado.Compare("ZombieEncontrado"))
 	{
 		//Ejecuta sus acciones estando enojado
-		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El estado es %s, La Planta  Encontro Zombie "), *Estado));
+		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El estado es %s, El Zombie  Encontro  "), *Estado));
 		//Puedes poner lo que quieras aqui
 		Disparar = true;
 	}

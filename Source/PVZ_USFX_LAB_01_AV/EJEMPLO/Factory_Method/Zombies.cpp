@@ -6,6 +6,9 @@
 #include "Components/BoxComponent.h"
 #include "Plantas.h"
 #include "PVZ_USFX_LAB_01_AVProjectile.h"
+#include "PVZ_USFX_LAB_01_AV/Ejemplo/Estrategy/OrdenarZombieHorizontal.h"
+#include "PVZ_USFX_LAB_01_AV/Ejemplo/Estrategy/OrdenarZombieVertical.h"
+#include "PVZ_USFX_LAB_01_AV/Ejemplo/Observer/PlantasObservados.h"
 
 // Sets default values
 AZombies::AZombies()
@@ -55,6 +58,9 @@ AZombies::AZombies()
 	MoverZombie = false;
 
 	ZombieMovido = false;
+	ZombieMovido02 = false;
+
+	PrimerZombieMuerto = false;
 }
 
 // Called when the game starts or when spawned
@@ -125,18 +131,20 @@ FString AZombies::GetNombreZombie()
 
 void AZombies::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)
 {
-
-	AZombies* Zombi = Cast<AZombies>(Other);
-	if (Zombi)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("choco con totro zombie")));
-	}
+	
 
 	APVZ_USFX_LAB_01_AVProjectile* Proyectil = Cast<APVZ_USFX_LAB_01_AVProjectile>(Other);
 	if (Proyectil)
 	{
 		if (Vida == 0)
 		{
+			if (this->PrimerZombieMuerto) {
+				Contenedor_Zombies.Remove(NombreZombie);
+				//OrdenarZombieHorizontal->GetPrimerZombie()->PrimerZombieMuerto = true;
+
+				GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Primer Zombie")));
+
+			}
 			GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Se murio")));
 			this->Destroy();
 		}
@@ -147,6 +155,7 @@ void AZombies::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveC
 
 void AZombies::AniadirManiobres(AActor* myEstrategias)
 {
+	OrdenarZombieHorizontal = Cast<AOrdenarZombieHorizontal>(myEstrategias);
 	//Try to cast the passed Strategy and set it to the current one
 	Estrategias = Cast<IEstrategias>(myEstrategias);
 	//Log Error if the cast failed
@@ -160,17 +169,23 @@ void AZombies::AniadirManiobres(AActor* myEstrategias)
 
 void AZombies::RealiazarManiobres(TMap<FString, AActor*> Actores)
 {
-
+	Contenedor_Zombies = Actores;
 	//Log Error if the current Strategy is NULL
 	if (!Estrategias) {
 		UE_LOG(LogTemp, Error, TEXT("Engage():Estrategias is NULL, make sure it's initialized.")); return;
 	}
 	//Execute the current Strategy Maneuver
-	Estrategias->Estrategias_Ataque(Actores);
+	Estrategias->Estrategias_Ataque(Contenedor_Zombies);
 }
 
 void AZombies::ColocarPlnta(AActor* Planta)
 {
+
+}
+
+void AZombies::CastPlantaObservada(AActor* Planta)
+{
+		PlantaObservada = Cast<APlantasObservados>(Planta);
 
 }
 

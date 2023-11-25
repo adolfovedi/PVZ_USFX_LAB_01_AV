@@ -29,12 +29,14 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	// 
 	// Change the Maneuver and set "BattleStrategy" variable
+	//----------------------Declaracion de Funciones----------------------
 	void AniadirManiobres(AActor* myEstrategias);
 	// Engage with the current Battle Strategy
 	void RealiazarManiobres(AActor* Planta);
 	void CambioHubicacion(FVector NewLocation);
 	/*void AutoDestrucction();*/
-	void SetCambioHubicacionActivo(bool NewCambioHubicacionActivo);
-	int TiempoCmbioHubicacion;
-	bool CambioHubicacionActivo;
+	//---------------C
+	void SetCambioHubicacionActivo(bool NewCambioHubicacionActivo); // Setea si el cambio de ubicación está activo o no
+	int TiempoCmbioHubicacion;// Tiempo que tarda en cambiar de ubicación
+	bool CambioHubicacionActivo;// Variable que indica si el cambio de ubicación está activo o no
 };
