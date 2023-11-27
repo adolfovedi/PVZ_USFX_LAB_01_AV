@@ -11,8 +11,8 @@ UCLASS()
 class PVZ_USFX_LAB_01_AV_API AOrdenarZombieHorizontal : public AActor, public IEstrategias
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	AOrdenarZombieHorizontal();
 
@@ -27,12 +27,17 @@ protected:
 
 	//TArray<FVector()> Contenedor_Posiciones;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	//Execute the Maneuver of this Strategy
 	virtual void Estrategias_Ataque(TMap<FString, AActor*> Actores) override;
-	class AZombies* PrimerZombie;
+	class AZombies* PrimerZombie; 
+	class AZombies* SegundoZombie;
+	class AZombies* TercerZombie;
+	class AZombies* CuartoZombie;
+	class AZombies* QuintoZombie;
+
 	AZombies* GetPrimerZombie();
 	bool PrimerZombieListo;
 	AActor** AguaDelfin;
@@ -67,4 +72,9 @@ public:
 	bool IgnorarCuartoZombie;
 	bool IgnorarQuintoZombie;
 	class APlantasObservados* PlantasObservados;
+	bool ZombieMuerto(AActor* Zombie);
+	bool EntrarSegundoZombie;
+	bool EntrarTercerZombie;
+	bool EntrarCuartoZombie;
+	bool EntrarQuintoZombie;
 };

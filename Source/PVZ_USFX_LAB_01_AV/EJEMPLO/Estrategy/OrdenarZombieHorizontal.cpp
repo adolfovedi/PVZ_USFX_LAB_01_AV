@@ -8,7 +8,7 @@
 // Sets default values
 AOrdenarZombieHorizontal::AOrdenarZombieHorizontal()
 {
- 	
+
     // Configure este actor para que llame a Tick() en cada cuadro. Puede desactivar esto para mejorar el rendimiento si no lo necesita.
     PrimaryActorTick.bCanEverTick = true;
     CastReady = true;
@@ -20,7 +20,8 @@ AOrdenarZombieHorizontal::AOrdenarZombieHorizontal()
     MoverZombie04 = false;
     MoverZombie05 = false;
     MoverZombie06 = false;
-
+    EntrarSegundoZombie = true;
+    EntrarTercerZombie = true;
     //---------Contenedor_Posiciones.Add(FVector(-1500.0f, 0.0f, 200.0f));---------
 
    /* Localizaciones.Add(FVector(-1500.0f, 1000.0f, 200.0f));
@@ -59,9 +60,14 @@ void AOrdenarZombieHorizontal::Tick(float DeltaTime)
             PrimerZombie = ZombieMovido;
             if (IgnorarPrimerZombie) {
                 ZombieMovido->ZombieMovido02 = true;
+
+                GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT(" mover 01")));
+
             }
             
             ZombieMovido->ZombieMovido = true;
+            ZombieMovido->ZombieMovido03 = true;
+            ZombieMovido->ZombieMovido04 = true;
         }
 
         cambiarUbicacion(DeltaTime, 0);
@@ -86,11 +92,17 @@ void AOrdenarZombieHorizontal::Tick(float DeltaTime)
             CastReady = false;
             if (IgnorarPrimerZombie) {
                 ZombieMovido->ZombieMovido02 = true;
+                ZombieMovido->ZombieMovido03 = true;
+                ZombieMovido->ZombieMovido04 = true;
+                SegundoZombie = ZombieMovido;
+                GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("mover 02")));
+
             }
             ZombieMovido->ZombieMovido = true;
         }
         cambiarUbicacion(DeltaTime, 1);
         if (IgnorarPrimerZombie) {
+
             if (ZombieMovido->GetActorLocation().Y <= LocalizacionesVertical[1].Y + 1.0f && ZombieMovido->GetActorLocation().Y >= LocalizacionesVertical[1].Y - 1.0f)
             {
                 MoverZombie02 = false;
@@ -115,6 +127,7 @@ void AOrdenarZombieHorizontal::Tick(float DeltaTime)
     if (MoverZombie03)
     {
         if (CastReady)
+
         {
             ZombieMovido = ZombieMover();
             CastReady = false;
@@ -122,9 +135,24 @@ void AOrdenarZombieHorizontal::Tick(float DeltaTime)
                 ZombieMovido->ZombieMovido02 = true;
             }
             ZombieMovido->ZombieMovido = true;
+            TercerZombie = ZombieMovido;    
+            ZombieMovido->ZombieMovido04 = true;
+
+            if (IgnorarSegundoZombie) {
+
+                ZombieMovido->ZombieMovido03 = true;
+
+            }
+
         }
-        cambiarUbicacion(DeltaTime, 2);
-        if (IgnorarPrimerZombie) {
+        if (IgnorarSegundoZombie) {
+            cambiarUbicacion(DeltaTime, 0);
+        }
+        else {
+            cambiarUbicacion(DeltaTime, 2);
+        }
+        
+        if (IgnorarPrimerZombie && !IgnorarSegundoZombie) {
             if (ZombieMovido->GetActorLocation().Y <= LocalizacionesVertical[2].Y + 1.0f && ZombieMovido->GetActorLocation().Y >= LocalizacionesVertical[2].Y - 1.0f)
             {
                 MoverZombie03 = false;
@@ -152,10 +180,22 @@ void AOrdenarZombieHorizontal::Tick(float DeltaTime)
             if (IgnorarPrimerZombie) {
                 ZombieMovido->ZombieMovido02 = true;
             }
+
+            if (IgnorarSegundoZombie) {
+
+                ZombieMovido->ZombieMovido03 = true;
+
+            }
             ZombieMovido->ZombieMovido = true;
+
+            if (IgnorarTercerZombie) {
+
+                ZombieMovido->ZombieMovido04 = true;
+
+            }
         }
         cambiarUbicacion(DeltaTime, 3);
-        if (IgnorarPrimerZombie)
+        if (IgnorarPrimerZombie && !IgnorarSegundoZombie)
         {
             if (ZombieMovido->GetActorLocation().Y <= LocalizacionesVertical[3].Y + 1.0f && ZombieMovido->GetActorLocation().Y >= LocalizacionesVertical[3].Y - 1.0f)
             {
@@ -166,6 +206,15 @@ void AOrdenarZombieHorizontal::Tick(float DeltaTime)
 
         }
         else {
+            if (IgnorarTercerZombie) {
+
+                if (ZombieMovido->GetActorLocation().Y <= LocalizacionesVertical[3].Y + 1.0f && ZombieMovido->GetActorLocation().Y >= LocalizacionesVertical[3].Y - 1.0f)
+                {
+                    MoverZombie04 = false;
+                    CastReady = true;
+                    MoverZombie05 = true;
+                }
+            }
             if (ZombieMovido->GetActorLocation().Y <= Localizaciones[3].Y + 1.0f && ZombieMovido->GetActorLocation().Y >= Localizaciones[3].Y - 1.0f)
             {
 				MoverZombie04 = false;
@@ -184,10 +233,21 @@ void AOrdenarZombieHorizontal::Tick(float DeltaTime)
             if (IgnorarPrimerZombie) {
                 ZombieMovido->ZombieMovido02 = true;
             }
+
+            if (IgnorarSegundoZombie) {
+
+                ZombieMovido->ZombieMovido03 = true;
+
+            }
             ZombieMovido->ZombieMovido = true;
+            if (IgnorarTercerZombie) {
+
+                ZombieMovido->ZombieMovido04 = true;
+
+            }
         }
         cambiarUbicacion(DeltaTime, 4);
-        if (IgnorarPrimerZombie) 
+        if (IgnorarPrimerZombie && !IgnorarSegundoZombie)
         {
             if (ZombieMovido->GetActorLocation().Y <= LocalizacionesVertical[4].Y + 1.0f && ZombieMovido->GetActorLocation().Y >= LocalizacionesVertical[4].Y - 1.0f)
             {
@@ -197,6 +257,15 @@ void AOrdenarZombieHorizontal::Tick(float DeltaTime)
             }
         }
         else {
+            if (IgnorarTercerZombie) {
+
+                if (ZombieMovido->GetActorLocation().Y <= LocalizacionesVertical[4].Y + 1.0f && ZombieMovido->GetActorLocation().Y >= LocalizacionesVertical[4].Y - 1.0f)
+                {
+                    MoverZombie05 = false;
+                    CastReady = true;
+                    MoverZombie06 = true;
+                }
+            }
 			if (ZombieMovido->GetActorLocation().Y <= Localizaciones[4].Y + 1.0f && ZombieMovido->GetActorLocation().Y >= Localizaciones[4].Y - 1.0f)
 			{ 
                 MoverZombie05 = false;
@@ -216,11 +285,22 @@ void AOrdenarZombieHorizontal::Tick(float DeltaTime)
             if (IgnorarPrimerZombie) {
                 ZombieMovido->ZombieMovido02 = true;
             }
+
+            if (IgnorarSegundoZombie) {
+
+                ZombieMovido->ZombieMovido03 = true;
+
+            }
             ZombieMovido->ZombieMovido = true;
+            if (IgnorarTercerZombie) {
+
+                ZombieMovido->ZombieMovido04 = true;
+
+            }
         }
 
         cambiarUbicacion(DeltaTime, 5);
-        if (IgnorarPrimerZombie) 
+        if (IgnorarPrimerZombie && !IgnorarSegundoZombie)
         {
             if ( ZombieMovido->GetActorLocation().Y <= LocalizacionesVertical[5].Y + 1.0f && ZombieMovido->GetActorLocation().Y >= LocalizacionesVertical[5].Y - 1.0f)
             {
@@ -242,6 +322,26 @@ void AOrdenarZombieHorizontal::Tick(float DeltaTime)
             }
         }
         else {
+            if (IgnorarTercerZombie) {
+                if (ZombieMovido->GetActorLocation().Y <= LocalizacionesVertical[5].Y + 1.0f && ZombieMovido->GetActorLocation().Y >= LocalizacionesVertical[5].Y - 1.0f)
+                {
+                    TorreLocalizacion->DefinirEstado("ZombieEncontrado");
+                    class AZombies* ZombieWithMaxLife = nullptr;
+                    for (class AZombies* ZombiePro : zombiesCon)
+                    {
+                        // Verificar si el puntero al zombie es válido
+                        if (ZombiePro && ZombiePro->MoverZombie == false)
+                        {
+                            ZombieWithMaxLife = ZombiePro;
+                            ZombieWithMaxLife->MoverZombie = true;
+                        }
+                    }
+
+                    //CastReady = true;
+                    GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("el ultimo dejo de moverse")));
+                    MoverZombie06 = false;
+                }
+            }
             if (ZombieMovido->GetActorLocation().Y <= Localizaciones[5].Y + 1.0f && ZombieMovido->GetActorLocation().Y >= Localizaciones[5].Y - 1.0f )
             {
                 TorreLocalizacion->DefinirEstado("ZombieEncontrado");
@@ -271,8 +371,9 @@ void AOrdenarZombieHorizontal::Tick(float DeltaTime)
                 GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("PrimerZombie ha Muerto")));
                 // Por ejemplo, elimina cualquier referencia a este zombie
                 //zombiesCon.Remove(*AguaDelfin);
-               /* MoverZombie01 = true;
-                CastReady = true;*/
+                GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("el ultimo dejo de moverse")));
+
+                CastReady = true;
                 IgnorarPrimerZombie = true;
                 MoverZombie02 = true;
                
@@ -303,6 +404,46 @@ void AOrdenarZombieHorizontal::Tick(float DeltaTime)
                 // Puedes realizar acciones adicionales aquí si el zombie sigue vivo
             }
         }
+    }
+    if (ZombieMuerto(SegundoZombie)&& EntrarSegundoZombie) {
+
+        GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El Segundo Zombie ha Muerto")));
+        class AZombies* ZombieWithMaxLife = nullptr;
+        for (class AZombies* ZombiePro : zombiesCon)
+        {
+            // Verificar si el puntero al zombie es válido
+            if (ZombiePro && ZombiePro->MoverZombie == true)
+            {
+                ZombieWithMaxLife = ZombiePro;
+                ZombieWithMaxLife->MoverZombie = false;
+            }
+        }
+        EntrarSegundoZombie = false;
+        TorreLocalizacion->DefinirEstado("PlantaOculta");
+        CastReady = true;
+        IgnorarSegundoZombie = true;
+        MoverZombie03 = true;
+        
+    }
+    if (ZombieMuerto(TercerZombie) && EntrarTercerZombie) {
+
+        GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("El Tercer Zombie ha Muerto")));
+        class AZombies* ZombieWithMaxLife = nullptr;
+        for (class AZombies* ZombiePro : zombiesCon)
+        {
+            // Verificar si el puntero al zombie es válido
+            if (ZombiePro && ZombiePro->MoverZombie == true)
+            {
+                ZombieWithMaxLife = ZombiePro;
+                ZombieWithMaxLife->MoverZombie = false;
+            }
+        }
+        EntrarTercerZombie = false;
+        TorreLocalizacion->DefinirEstado("PlantaOculta");
+        CastReady = true;
+        IgnorarTercerZombie = true;
+        MoverZombie04 = true;
+
     }
 
 }
@@ -388,6 +529,37 @@ AZombies* AOrdenarZombieHorizontal::ZombieMover()
                 //ZombieWithMaxLife->ZombieMovido02 = true;
             }
         }
+        if (ZombiePro && ZombiePro->ZombieMovido03 == false && IgnorarSegundoZombie == true)
+        {
+            // Comparar vidas y actualizar si se encuentra una vida más alta
+            if (ZombiePro->GetVida() > MaxLife)
+            {
+                MaxLife = ZombiePro->GetVida();
+                ZombieWithMaxLife = ZombiePro;
+                //ZombieWithMaxLife->ZombieMovido02 = true;
+            }
+        }
+        if (ZombiePro && ZombiePro->ZombieMovido04 == false && IgnorarTercerZombie == true)
+        {
+            // Comparar vidas y actualizar si se encuentra una vida más alta
+            if (ZombiePro->GetVida() > MaxLife)
+            {
+                MaxLife = ZombiePro->GetVida();
+                ZombieWithMaxLife = ZombiePro;
+                //ZombieWithMaxLife->ZombieMovido02 = true;
+            }
+        }
+        if (ZombiePro && ZombiePro->ZombieMovido05 == false && IgnorarCuartoZombie == true)
+        {
+            // Comparar vidas y actualizar si se encuentra una vida más alta
+            if (ZombiePro->GetVida() > MaxLife)
+            {
+                MaxLife = ZombiePro->GetVida();
+                ZombieWithMaxLife = ZombiePro;
+                //ZombieWithMaxLife->ZombieMovido02 = true;
+            }
+        }
+
     }
     //ZombieWithMaxLife->ZombieMovido = true;
 
@@ -397,18 +569,26 @@ AZombies* AOrdenarZombieHorizontal::ZombieMover()
 void AOrdenarZombieHorizontal::cambiarUbicacion(float _DeltaTime, int Ubi)
 {
     FVector Direction;
-    if (IgnorarPrimerZombie) {
+    if (IgnorarPrimerZombie && !IgnorarSegundoZombie) {
         Direction = LocalizacionesVertical[Ubi] - ZombieMovido->GetActorLocation();
         Direction.Normalize();
 
     }
-    else {
+    else if (IgnorarSegundoZombie && !IgnorarTercerZombie){
         Direction = Localizaciones[Ubi] - ZombieMovido->GetActorLocation();
         Direction.Normalize();
 
     }
+    else if (IgnorarTercerZombie) {
+        Direction = LocalizacionesVertical[Ubi] - ZombieMovido->GetActorLocation();
+        Direction.Normalize();
+    }
+    else {
+        Direction = Localizaciones[Ubi] - ZombieMovido->GetActorLocation();
+        Direction.Normalize();
+    }
    
-   
+  
 
     // Establece la nueva ubicación basada en la dirección y una velocidad de movimiento (ajusta según sea necesario)
     float VelocidadMovimiento = 200.0f; // Ajusta este valor según sea necesario
@@ -441,5 +621,29 @@ void AOrdenarZombieHorizontal::CastPlanta(AActor* Planta, AActor* Torre)
     LocalizacionesVertical.Add(PosicionPlanta01 + FVector(0.0f, 450.0f, 0.0f));
     LocalizacionesVertical.Add(PosicionPlanta01 + FVector(0.0f, 600.0f, 0.0f));
     LocalizacionesVertical.Add(PosicionPlanta01 + FVector(0.0f, 750.0f, 0.0f));
+}
+
+bool AOrdenarZombieHorizontal::ZombieMuerto(AActor* Zombie)
+{
+    if (Zombie) {
+        if (Zombie->IsValidLowLevel()) {
+            if (Zombie->IsPendingKill()) {
+                // El zombie ha sido destruido
+                // Realiza las acciones correspondientes
+                // Por ejemplo, elimina cualquier referencia a este zombie
+             
+
+                Zombie = nullptr;
+                return true;
+
+            }
+            else {
+                // El zombie todavía está activo
+                return false;
+                // Puedes realizar acciones adicionales aquí si el zombie sigue vivo
+            }
+        }
+    }
+    return false;
 }
 

@@ -59,6 +59,9 @@ AZombies::AZombies()
 
 	ZombieMovido = false;
 	ZombieMovido02 = false;
+	ZombieMovido03 = false;
+	ZombieMovido04 = false;
+	ZombieMovido05 = false;
 
 	PrimerZombieMuerto = false;
 }

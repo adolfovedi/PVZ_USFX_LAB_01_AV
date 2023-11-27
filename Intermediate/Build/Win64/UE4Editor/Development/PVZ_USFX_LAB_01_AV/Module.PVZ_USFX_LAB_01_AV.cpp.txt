@@ -169,7 +169,6 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/ZombieAguaBuzo.cpp
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/ZombieAguaDelfin.cpp
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/ZombieAguaFlotante.cpp
-C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/Zombies.cpp
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/ZombieTierraBailarin.cpp
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/ZombieTierraGlobo.cpp
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/ZombieTierraMichaelJackson.cpp
@@ -177,6 +176,8 @@ C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/Z
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/ZombieTierraSaltarin.cpp
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Observer/CambioDestino.cpp
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Observer/Observer_Principal.cpp
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Observer/PlantasObservados.cpp
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Observer/Publicador.cpp
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Observer/Suscriptor.cpp
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Observer/TorreLocalizacion.cpp
@@ -898,7 +899,6 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Animation/MorphTarget.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MorphTarget.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\SystemSettings.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\EngineUtils.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/Jugador.cpp
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV\Jugador.h

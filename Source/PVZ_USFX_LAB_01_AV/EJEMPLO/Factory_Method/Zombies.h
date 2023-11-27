@@ -91,6 +91,9 @@ public:
 
 
 	bool ZombieMovido02;
+	bool ZombieMovido03;
+	bool ZombieMovido04;
+	bool ZombieMovido05;
 
 	bool ZombieMovido;
 	bool MoverZombie;
@@ -101,4 +104,5 @@ public:
 	class APlantasObservados * PlantaObservada;
 	void CastPlantaObservada(AActor* Planta);
 	bool PrimerZombieListo;
+
 };
