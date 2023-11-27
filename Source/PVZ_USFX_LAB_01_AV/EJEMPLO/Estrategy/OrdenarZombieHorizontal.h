@@ -47,6 +47,7 @@ public:
 	FVector PosicionPlanta01;
 
 	TArray<FVector> Localizaciones;
+	TArray<FVector> LocalizacionesVertical;
 
 	class AZombies* ZombieMovido;
 
@@ -61,5 +62,9 @@ public:
 	void CastPlanta(AActor* Planta, AActor* Torre);
 	class ATorreLocalizacion* TorreLocalizacion;
 	bool IgnorarPrimerZombie;
+	bool IgnorarSegundoZombie;
+	bool IgnorarTercerZombie;
+	bool IgnorarCuartoZombie;
+	bool IgnorarQuintoZombie;
 	class APlantasObservados* PlantasObservados;
 };

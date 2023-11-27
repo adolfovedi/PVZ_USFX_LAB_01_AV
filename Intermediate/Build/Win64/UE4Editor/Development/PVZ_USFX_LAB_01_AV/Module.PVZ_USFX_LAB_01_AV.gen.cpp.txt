@@ -134,6 +134,12 @@ C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LA
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/Observer_Principal.gen.cpp
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/EJEMPLO/Observer/Observer_Principal.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Observer_Principal.generated.h
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/OrdenarZombieHorizontal.gen.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/EJEMPLO/Estrategy/OrdenarZombieHorizontal.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\OrdenarZombieHorizontal.generated.h
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/OrdenarZombieVertical.gen.cpp
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/EJEMPLO/Estrategy/OrdenarZombieVertical.h
+C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\OrdenarZombieVertical.generated.h
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/Plant.gen.cpp
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/Planta_estrategica.gen.cpp
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/PlantaObservada.gen.cpp
@@ -170,6 +176,7 @@ C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LA
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/Publicador.gen.cpp
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/EJEMPLO/Observer/Publicador.h
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB_01_AV\Publicador.generated.h
+C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/PVZ_USFX_LAB_01_AV.init.gen.cpp
 C:/SIS-457/PVZ_USFX_LAB_01_AV/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB_01_AV/PVZ_USFX_LAB_01_AVGameMode.gen.cpp
 C:\SIS-457\PVZ_USFX_LAB_01_AV\Source\PVZ_USFX_LAB_01_AV/PVZ_USFX_LAB_01_AVGameMode.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h

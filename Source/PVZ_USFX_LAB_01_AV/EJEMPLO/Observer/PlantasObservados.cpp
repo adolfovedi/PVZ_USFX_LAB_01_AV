@@ -10,7 +10,7 @@ APlantasObservados::APlantasObservados()
 {
 		PrimaryActorTick.bCanEverTick = true;
 
-		TiempoEntreDisparos = 0.2f;//
+		TiempoEntreDisparos = 0.5f;//
 }
 
 void APlantasObservados::BeginPlay()
