@@ -247,30 +247,36 @@ void AOrdenarZombieHorizontal::Tick(float DeltaTime)
             }
         }
         cambiarUbicacion(DeltaTime, 4);
-        if (IgnorarPrimerZombie && !IgnorarSegundoZombie)
+        if (IgnorarPrimerZombie && !IgnorarSegundoZombie && !IgnorarTercerZombie)
         {
             if (ZombieMovido->GetActorLocation().Y <= LocalizacionesVertical[4].Y + 1.0f && ZombieMovido->GetActorLocation().Y >= LocalizacionesVertical[4].Y - 1.0f)
             {
                 MoverZombie05 = false;
                 CastReady = true;
                 MoverZombie06 = true;
+                GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Horizontal")));
             }
         }
         else {
-            if (IgnorarTercerZombie) {
-
+            if (IgnorarTercerZombie)
+            {
                 if (ZombieMovido->GetActorLocation().Y <= LocalizacionesVertical[4].Y + 1.0f && ZombieMovido->GetActorLocation().Y >= LocalizacionesVertical[4].Y - 1.0f)
                 {
                     MoverZombie05 = false;
                     CastReady = true;
                     MoverZombie06 = true;
+                    GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Horizontal")));
                 }
             }
-			if (ZombieMovido->GetActorLocation().Y <= Localizaciones[4].Y + 1.0f && ZombieMovido->GetActorLocation().Y >= Localizaciones[4].Y - 1.0f)
-			{ 
-                MoverZombie05 = false;
-                CastReady = true;
-                MoverZombie06 = true;
+            else
+            {
+                if (ZombieMovido->GetActorLocation().Y <= Localizaciones[4].Y + 1.0f && ZombieMovido->GetActorLocation().Y >= Localizaciones[4].Y - 1.0f)
+                {
+                    MoverZombie05 = false;
+                    CastReady = true;
+                    MoverZombie06 = true;
+                    //GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Vertical")));
+                }
             }
         }
 
@@ -300,7 +306,7 @@ void AOrdenarZombieHorizontal::Tick(float DeltaTime)
         }
 
         cambiarUbicacion(DeltaTime, 5);
-        if (IgnorarPrimerZombie && !IgnorarSegundoZombie)
+        if (IgnorarPrimerZombie && !IgnorarSegundoZombie && !IgnorarTercerZombie)
         {
             if ( ZombieMovido->GetActorLocation().Y <= LocalizacionesVertical[5].Y + 1.0f && ZombieMovido->GetActorLocation().Y >= LocalizacionesVertical[5].Y - 1.0f)
             {
@@ -569,7 +575,7 @@ AZombies* AOrdenarZombieHorizontal::ZombieMover()
 void AOrdenarZombieHorizontal::cambiarUbicacion(float _DeltaTime, int Ubi)
 {
     FVector Direction;
-    if (IgnorarPrimerZombie && !IgnorarSegundoZombie) {
+    if (IgnorarPrimerZombie && !IgnorarSegundoZombie && !IgnorarTercerZombie) {
         Direction = LocalizacionesVertical[Ubi] - ZombieMovido->GetActorLocation();
         Direction.Normalize();
 
@@ -579,8 +585,12 @@ void AOrdenarZombieHorizontal::cambiarUbicacion(float _DeltaTime, int Ubi)
         Direction.Normalize();
 
     }
-    else if (IgnorarTercerZombie) {
+    else if (IgnorarTercerZombie && !IgnorarCuartoZombie) {
         Direction = LocalizacionesVertical[Ubi] - ZombieMovido->GetActorLocation();
+        Direction.Normalize();
+    }
+    else if (IgnorarCuartoZombie) {
+        Direction = Localizaciones[Ubi] - ZombieMovido->GetActorLocation();
         Direction.Normalize();
     }
     else {

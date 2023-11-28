@@ -38,6 +38,7 @@
 #include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/ZombieAguaBuzo.cpp"
 #include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/ZombieAguaDelfin.cpp"
 #include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/ZombieAguaFlotante.cpp"
+#include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/Zombies.cpp"
 #include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/ZombieTierraBailarin.cpp"
 #include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/ZombieTierraGlobo.cpp"
 #include "C:/SIS-457/PVZ_USFX_LAB_01_AV/Source/PVZ_USFX_LAB_01_AV/EJEMPLO/Factory_Method/ZombieTierraMichaelJackson.cpp"
