@@ -50,6 +50,7 @@ public:
 
 	class AZombies* ZombieMovido;
 
+	TArray<FString> contenedor_Nombres;
 
 	float _DeltaTime;
 	bool CastReady;
@@ -60,4 +61,9 @@ public:
 	void cambiarUbicacion(float _DeltaTime, int Ubi);
 	void CastPlanta(AActor* Planta, AActor* Torre);
 	class ATorreLocalizacion* TorreLocalizacion;
+	bool ComenzarTick;
+	int CantidadZombies;
+	bool aux01;
+	bool aux02;
+	bool aux03;
 };

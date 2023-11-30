@@ -24,4 +24,22 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	TMap<FString, AActor*> Contenedor_Actores;
+	TArray<class AZombies*> Contenedor_Zombies;
+	float TiempoCambio;
+	bool CambioEstrategia;
+	bool EstrategiaVertical;
+	bool EstrategiaHorizontal;
+	class AZombies* Zombie;
+	class ATorreLocalizacion* TorreLocalizacion;
+	class APlantasObservados* PlantasObservados;
+	class AOrdenarZombieVertical* OrdenarZombieVertical;
+	AZombies* ZombieMover();
+	class AZombies* PrimerZombie;
+	bool aux01;
+	bool aux02;
+
+
+
+
+
 };

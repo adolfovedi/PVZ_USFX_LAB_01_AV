@@ -13,7 +13,8 @@ AOrdenarZombieHorizontal::AOrdenarZombieHorizontal()
     PrimaryActorTick.bCanEverTick = true;
     CastReady = true;
     IgnorarPrimerZombie = false;
-    //-----------------Localizaciones.Add(FVector(-1500.0f, 0.0f, 200.0f));-----------------
+    
+    //----------- las Variables de los Zombies----------------
     MoverZombie01 = true;
     MoverZombie02 = false;
     MoverZombie03 = false;
@@ -49,7 +50,7 @@ void AOrdenarZombieHorizontal::Tick(float DeltaTime)
 
    
 
-
+    //------Mover Los Zombies uno por uno----------------
     if (MoverZombie01)
     {
         if (CastReady)
@@ -613,9 +614,10 @@ void AOrdenarZombieHorizontal::CastPlanta(AActor* Planta, AActor* Torre)
     PlantasObservados = Cast<APlantasObservados>(Planta);
     TorreLocalizacion = Cast<ATorreLocalizacion>(Torre);
     PosicionPlanta01 = PlantasObservados->GetPocisionObservador() + FVector(0.0f, 1000.0f, 0.0f);
+
     //----------------------Localizaciones De Zombies----------------------
-    
-	
+   
+
     Localizaciones.Add(PosicionPlanta01);
     Localizaciones.Add(PosicionPlanta01 + FVector(-200.0f, 0.0f, 0.0f));
     Localizaciones.Add(PosicionPlanta01 + FVector(200.0f, 0.0f, 0.0f));
